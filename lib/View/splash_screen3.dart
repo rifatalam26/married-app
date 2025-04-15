@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:married_app/View/splash_screen3.dart';
 
-class SplashScreen2 extends StatefulWidget {
-  const SplashScreen2({super.key});
+class SplashScreen3 extends StatefulWidget {
+  const SplashScreen3({super.key});
 
   @override
-  State<SplashScreen2> createState() => _SplashScreen2State();
+  State<SplashScreen3> createState() => _SplashScreen3State();
 }
 
-class _SplashScreen2State extends State<SplashScreen2> {
+class _SplashScreen3State extends State<SplashScreen3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body:  Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/image/splash2.png"),
@@ -28,14 +27,14 @@ class _SplashScreen2State extends State<SplashScreen2> {
                 height: 510,
               ),
               const Text(
-                "Welcome to Wedding Music",
+                "Simplify Your Music",
                 style: TextStyle(
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
               const Text(
-                "Planner!",
+                "Planning",
                 style: TextStyle(
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
@@ -45,11 +44,11 @@ class _SplashScreen2State extends State<SplashScreen2> {
                 height: 13,
               ),
               const Text(
-                "The easiest way to organize your perfect",
+                "Suggesting Life partner match anytime,",
                 style: TextStyle(fontSize: 16, color: Colors.white),
               ),
               const Text(
-                "wedding playlist.",
+                "anywhere.",
                 style: TextStyle(fontSize: 16, color: Colors.white),
               ),
               const SizedBox(
@@ -66,7 +65,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
                       color: const Color(0xff7DBABB),
                       borderRadius: BorderRadius.circular(5)),
                   child: const Center(
-                    child: Text("Get Started",
+                    child: Text("Next",
                         style: TextStyle(fontSize: 16, color: Colors.white)),
                   ),
                 ),

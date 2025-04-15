@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class SplashScreen2 extends StatefulWidget {
   const SplashScreen2({super.key});
@@ -21,6 +23,9 @@ class _SplashScreen2State extends State<SplashScreen2> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const SizedBox(
+                height: 510,
+              ),
               const Text(
                 "Welcome to Wedding Music",
                 style: TextStyle(
@@ -49,15 +54,20 @@ class _SplashScreen2State extends State<SplashScreen2> {
               const SizedBox(
                 height: 32,
               ),
-              Container(
-                height: 49,
-                width: 342,
-                decoration: BoxDecoration(
-                    color: const Color(0xff7DBABB),
-                    borderRadius: BorderRadius.circular(5)),
-                child: const Center(
-                  child: Text("Get Started",
-                      style: TextStyle(fontSize: 16, color: Colors.white)),
+              InkWell(
+                onTap: () {
+                  Get.to(const SplashScreen2());
+                },
+                child: Container(
+                  height: 49,
+                  width: 342,
+                  decoration: BoxDecoration(
+                      color: const Color(0xff7DBABB),
+                      borderRadius: BorderRadius.circular(5)),
+                  child: const Center(
+                    child: Text("Get Started",
+                        style: TextStyle(fontSize: 16, color: Colors.white)),
+                  ),
                 ),
               )
             ],

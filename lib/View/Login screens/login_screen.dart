@@ -177,7 +177,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     image: AssetImage("assets/image/Frame 17559.png"))),
           ),
           const SizedBox(
-            height: 40,
+            height: 35,
           ),
           const Padding(
             padding: EdgeInsets.only(left: 60),

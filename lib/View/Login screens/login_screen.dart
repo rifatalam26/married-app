@@ -51,6 +51,8 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: TextFormField(
               decoration: InputDecoration(
+                  hintText: "Enter your email",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     // borderSide: BorderSide(color: )
@@ -60,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
           const SizedBox(
-            width: 35,
+            height: 20,
           ),
           const Row(
             children: [
@@ -82,6 +84,8 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: TextFormField(
               decoration: InputDecoration(
+                  hintText: "Enter your password",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     // borderSide: BorderSide(color: )
@@ -89,6 +93,23 @@ class _LoginScreenState extends State<LoginScreen> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8))),
             ),
+          ),
+          const SizedBox(
+            height: 26,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 200,
+              ),
+              Text(
+                "Forgot password?",
+                style: TextStyle(
+                  fontSize: 17,
+                  color: Color(0xff7DBABB)
+                ),
+              )
+            ],
           )
         ]),
       ),

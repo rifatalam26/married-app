@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:married_app/View/splash_screen4.dart';
 
 class SplashScreen3 extends StatefulWidget {
   const SplashScreen3({super.key});
@@ -56,7 +57,7 @@ class _SplashScreen3State extends State<SplashScreen3> {
               ),
               InkWell(
                 onTap: () {
-                  Get.to(const SplashScreen3());
+                  Get.to(const SplashScreen4());
                 },
                 child: Container(
                   height: 49,

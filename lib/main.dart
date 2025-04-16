@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
-import 'View/splash_screen.dart';
+import 'View/Splash screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());

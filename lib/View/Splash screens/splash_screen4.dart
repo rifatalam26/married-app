@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:married_app/View/splash_screen4.dart';
+import 'package:married_app/View/Login%20screens/login_screen.dart';
 
-class SplashScreen3 extends StatefulWidget {
-  const SplashScreen3({super.key});
+class SplashScreen4 extends StatefulWidget {
+  const SplashScreen4({super.key});
 
   @override
-  State<SplashScreen3> createState() => _SplashScreen3State();
+  State<SplashScreen4> createState() => _SplashScreen4State();
 }
 
-class _SplashScreen3State extends State<SplashScreen3> {
+class _SplashScreen4State extends State<SplashScreen4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:  Container(
+      body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/image/splash2.png"),
+                image: AssetImage("assets/image/splash3.png"),
                 fit: BoxFit.cover)),
         child: Center(
           child: Column(
@@ -28,14 +28,14 @@ class _SplashScreen3State extends State<SplashScreen3> {
                 height: 510,
               ),
               const Text(
-                "Simplify Your Music",
+                "Share Your Playlist with",
                 style: TextStyle(
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
               const Text(
-                "Planning",
+                "Vendors",
                 style: TextStyle(
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
@@ -45,11 +45,11 @@ class _SplashScreen3State extends State<SplashScreen3> {
                 height: 13,
               ),
               const Text(
-                "Suggesting Life partner match anytime,",
+                "Save your selections and share them with",
                 style: TextStyle(fontSize: 16, color: Colors.white),
               ),
               const Text(
-                "anywhere.",
+                "your DJ,celebrant,or venue in one click",
                 style: TextStyle(fontSize: 16, color: Colors.white),
               ),
               const SizedBox(
@@ -57,7 +57,7 @@ class _SplashScreen3State extends State<SplashScreen3> {
               ),
               InkWell(
                 onTap: () {
-                  Get.to(const SplashScreen4());
+                  Get.to(const LoginScreen());
                 },
                 child: Container(
                   height: 49,

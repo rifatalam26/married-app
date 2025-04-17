@@ -192,13 +192,13 @@ class _SignupScreenState extends State<SignupScreen> {
                     children: [
                       Text(
                         "By continuing, you agree to our Terms of  ",
-                        style: TextStyle(color: Color(0xff5A5C5F),fontSize: 15),
+                        style: TextStyle(color: Color(0xff848484),fontSize: 15),
                       ),
                       Padding(
                         padding: EdgeInsets.only(right: 100),
                         child: Text(
                           "Service and Privacy Policy",
-                          style: TextStyle(color: Color(0xff5A5C5F),fontSize: 15),
+                          style: TextStyle(color: Color(0xff848484),fontSize: 15),
                         ),
                       ),
                     ],
@@ -214,7 +214,7 @@ class _SignupScreenState extends State<SignupScreen> {
               children: [
                 Text(
                   "Already have an account?  ",
-                  style: TextStyle(fontSize: 16, color: Color(0xff6B7280)),
+                  style: TextStyle(fontSize: 16, color: Color(0xff848484)),
                 ),
                 Text(
                   "Log-in",

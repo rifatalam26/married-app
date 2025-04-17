@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
+import 'View/Login screens/signup_screen.dart';
 import 'View/Splash screens/splash_screen.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: SignupScreen(),
     );
   }
 }

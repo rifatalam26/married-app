@@ -13,7 +13,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           const Text(

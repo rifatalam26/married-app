@@ -8,9 +8,10 @@ class SignupScreen extends StatefulWidget {
 }
 
 class _SignupScreenState extends State<SignupScreen> {
+  bool check = false;
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -44,7 +45,7 @@ class _SignupScreenState extends State<SignupScreen> {
               style: TextStyle(color: Color(0xff848484)),
             ),
             const SizedBox(
-              height: 25,
+              height: 20,
             ),
             const Padding(
               padding: EdgeInsets.only(right: 285),
@@ -54,7 +55,7 @@ class _SignupScreenState extends State<SignupScreen> {
               ),
             ),
             const SizedBox(
-              height: 13,
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15, right: 15),
@@ -71,17 +72,17 @@ class _SignupScreenState extends State<SignupScreen> {
               ),
             ),
             const SizedBox(
-              height: 25,
+              height: 22,
             ),
             const Padding(
-              padding: EdgeInsets.only(right: 285),
+              padding: EdgeInsets.only(right: 287),
               child: Text(
                 "Email",
                 style: TextStyle(fontSize: 17, color: Color(0xff252C32)),
               ),
             ),
             const SizedBox(
-              height: 13,
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15, right: 15),
@@ -97,6 +98,130 @@ class _SignupScreenState extends State<SignupScreen> {
                         borderRadius: BorderRadius.circular(8))),
               ),
             ),
+            const SizedBox(
+              height: 22,
+            ),
+            const Padding(
+              padding: EdgeInsets.only(right: 253),
+              child: Text(
+                "Password",
+                style: TextStyle(fontSize: 17, color: Color(0xff252C32)),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: TextFormField(
+                decoration: InputDecoration(
+                    hintText: "Enter your password",
+                    hintStyle: TextStyle(color: Colors.grey.shade400),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      // borderSide: BorderSide(color: )
+                    ),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+            ),
+            const SizedBox(
+              height: 22,
+            ),
+            const Padding(
+              padding: EdgeInsets.only(right: 188),
+              child: Text(
+                "Confirm Password",
+                style: TextStyle(fontSize: 17, color: Color(0xff252C32)),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: TextFormField(
+                decoration: InputDecoration(
+                    hintText: "Enter your password",
+                    hintStyle: TextStyle(color: Colors.grey.shade400),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      // borderSide: BorderSide(color: )
+                    ),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+            ),
+            const SizedBox(
+              height: 22,
+            ),
+            Container(
+              height: 53,
+              width: 331,
+              decoration: BoxDecoration(
+                  color: const Color(0xff7DBABB),
+                  borderRadius: BorderRadius.circular(8)),
+              child: const Center(
+                child: Text(
+                  "Register",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 5),
+              child: Row(
+                children: [
+                  Checkbox(
+                      activeColor: const Color(0xff7DBABB),
+                      checkColor: Colors.black,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5)),
+                      value: check,
+                      onChanged: (c) {
+                        check = c!;
+                        setState(() {});
+                      }),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 16),
+                    child: Column(
+                      children: [
+                        Text(
+                          "By continuing, you agree to our Terms of  ",
+                          style: TextStyle(color: Color(0xff5A5C5F)),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(right: 100),
+                          child: Text(
+                            "Service and Privacy Policy",
+                            style: TextStyle(color: Color(0xff5A5C5F)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Already have an account?  ",
+                  style: TextStyle(fontSize: 20, color: Color(0xff6B7280)),
+                ),
+                Text(
+                  "Log-in",
+                  style: TextStyle(fontSize: 20, color: Color(0xff7DBABB)),
+                ),
+              ],
+            )
           ],
         ),
       ),

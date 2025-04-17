@@ -16,6 +16,9 @@ class _SignupScreenState extends State<SignupScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(
+              height: 15,
+            ),
             const Text(
               "LOGO",
               style: TextStyle(
@@ -24,7 +27,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   color: Color(0xff7DBABB)),
             ),
             const SizedBox(
-              height: 25,
+              height: 10,
             ),
             const Text(
               "Sign up to Continue",
@@ -45,7 +48,7 @@ class _SignupScreenState extends State<SignupScreen> {
               style: TextStyle(color: Color(0xff848484)),
             ),
             const SizedBox(
-              height: 20,
+              height: 15,
             ),
             const Padding(
               padding: EdgeInsets.only(right: 285),
@@ -171,40 +174,37 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 5),
-              child: Row(
-                children: [
-                  Checkbox(
-                      activeColor: const Color(0xff7DBABB),
-                      checkColor: Colors.black,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5)),
-                      value: check,
-                      onChanged: (c) {
-                        check = c!;
-                        setState(() {});
-                      }),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 16),
-                    child: Column(
-                      children: [
-                        Text(
-                          "By continuing, you agree to our Terms of  ",
-                          style: TextStyle(color: Color(0xff5A5C5F)),
+            Row(
+              children: [
+                Checkbox(
+                    activeColor: const Color(0xff7DBABB),
+                    checkColor: Colors.black,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)),
+                    value: check,
+                    onChanged: (c) {
+                      check = c!;
+                      setState(() {});
+                    }),
+                const Padding(
+                  padding: EdgeInsets.only(top: 16),
+                  child: Column(
+                    children: [
+                      Text(
+                        "By continuing, you agree to our Terms of  ",
+                        style: TextStyle(color: Color(0xff5A5C5F),fontSize: 15),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(right: 100),
+                        child: Text(
+                          "Service and Privacy Policy",
+                          style: TextStyle(color: Color(0xff5A5C5F),fontSize: 15),
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(right: 100),
-                          child: Text(
-                            "Service and Privacy Policy",
-                            style: TextStyle(color: Color(0xff5A5C5F)),
-                          ),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
+                      ),
+                    ],
+                  ),
+                )
+              ],
             ),
             const SizedBox(
               height: 15,
@@ -214,11 +214,11 @@ class _SignupScreenState extends State<SignupScreen> {
               children: [
                 Text(
                   "Already have an account?  ",
-                  style: TextStyle(fontSize: 20, color: Color(0xff6B7280)),
+                  style: TextStyle(fontSize: 16, color: Color(0xff6B7280)),
                 ),
                 Text(
                   "Log-in",
-                  style: TextStyle(fontSize: 20, color: Color(0xff7DBABB)),
+                  style: TextStyle(fontSize: 16, color: Color(0xff7DBABB)),
                 ),
               ],
             )

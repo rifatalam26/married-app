@@ -9,8 +9,8 @@ class SignupScreen extends StatefulWidget {
 
 class _SignupScreenState extends State<SignupScreen> {
   TextEditingController passwordcontroller = TextEditingController();
-  bool _securetext = true;
-
+  bool _secureText = true;
+  bool _secureText2 =true;
   bool check = false;
   @override
   Widget build(BuildContext context) {
@@ -121,16 +121,16 @@ class _SignupScreenState extends State<SignupScreen> {
               Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15),
                 child: TextFormField(
-                  obscureText:_securetext,
+                  obscureText:_secureText,
                   decoration: InputDecoration(
                       suffixIcon: IconButton(
                           onPressed: () {
                             setState(() {
-                              _securetext = !_securetext;
+                              _secureText = !_secureText;
                             });
                           },
                           icon: Icon(
-                            _securetext
+                            _secureText
                                 ? Icons.remove_red_eye_outlined
                                 : Icons.remove_red_eye,
                             color: Colors.grey.shade400,
@@ -162,16 +162,16 @@ class _SignupScreenState extends State<SignupScreen> {
               Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15),
                 child: TextFormField(
-                  obscureText:_securetext ,
+                  obscureText:_secureText2 ,
                   decoration: InputDecoration(
                       suffixIcon: IconButton(
                           onPressed: () {
                             setState(() {
-                              _securetext = !_securetext;
+                              _secureText2 = !_secureText2;
                             });
                           },
                           icon: Icon(
-                            _securetext
+                            _secureText2
                                 ? Icons.remove_red_eye_outlined
                                 : Icons.remove_red_eye,
                             color: Colors.grey.shade400,

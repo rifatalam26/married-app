@@ -4,6 +4,7 @@ import 'package:married_app/View/Login%20screens/login_screen.dart';
 
 import 'View/Login screens/phone_number_screen.dart';
 import 'View/Login screens/signup_screen.dart';
+import 'View/Login screens/verify_phone_number.dart';
 import 'View/Splash screens/splash_screen.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PhoneNumberScreen(),
+      home: VerifyPhoneNumber(),
     );
   }
 }

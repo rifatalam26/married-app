@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:married_app/View/Login%20screens/verify_phone_number.dart';
 
 class PhoneNumberScreen extends StatefulWidget {
   const PhoneNumberScreen({super.key});
@@ -32,7 +33,7 @@ class _PhoneNumberScreenState extends State<PhoneNumberScreen> {
                   const Text(
                     "Forgot password",
                     style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: Color(0xff141414)),
                   )
@@ -96,7 +97,7 @@ class _PhoneNumberScreenState extends State<PhoneNumberScreen> {
             ),
             InkWell(
               onTap: (){
-                Get.to(const PhoneNumberScreen());
+                Get.to(const VerifyPhoneNumber());
               },
               child: Container(
                 height: 53,

@@ -133,8 +133,8 @@ class _SignupScreenState extends State<SignupScreen> {
                           },
                           icon: Icon(
                             _secureText
-                                ? Icons.remove_red_eye_outlined
-                                : Icons.remove_red_eye,
+                                ? Icons.visibility_off
+                                : Icons.visibility,
                             color: Colors.grey.shade400,
                           )),
                       hintText: "Enter your password",
@@ -174,8 +174,8 @@ class _SignupScreenState extends State<SignupScreen> {
                           },
                           icon: Icon(
                             _secureText2
-                                ? Icons.remove_red_eye_outlined
-                                : Icons.remove_red_eye,
+                                ? Icons.visibility_off
+                                : Icons.visibility,
                             color: Colors.grey.shade400,
                           )),
                       hintText: "Enter your password",

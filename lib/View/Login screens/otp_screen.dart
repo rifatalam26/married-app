@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:married_app/View/Login%20screens/otp_screen.dart';
+import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 
-class VerifyPhoneNumber extends StatefulWidget {
-  const VerifyPhoneNumber({super.key});
+class OtpScreen extends StatefulWidget {
+  const OtpScreen({super.key});
 
   @override
-  State<VerifyPhoneNumber> createState() => _VerifyPhoneNumberState();
+  State<OtpScreen> createState() => _OtpScreenState();
 }
 
-class _VerifyPhoneNumberState extends State<VerifyPhoneNumber> {
+class _OtpScreenState extends State<OtpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,39 +50,35 @@ class _VerifyPhoneNumberState extends State<VerifyPhoneNumber> {
               ),
             ),
             const SizedBox(
-              height: 120,
+              height: 30,
             ),
-            InkWell(
-              onTap: () {
-                Get.to(const OtpScreen());
+            const Padding(
+              padding: EdgeInsets.only(right: 260),
+              child: Text("OTP Code",style: TextStyle(fontSize: 17,color: Color(0xffB0BABF)),),
+            ),
+            OtpTextField(decoration: InputDecoration(
+              
+            ),
+              numberOfFields: 4,
+             // borderColor: Color(0xFFDFE1E6),
+              //set to true to show as box or false to show as dash
+              showFieldAsBox: true,
+              //runs when a code is typed in
+              onCodeChanged: (String code) {
+                //handle validation or checks here
               },
-              child: Container(
-                height: 53,
-                width: 331,
-                decoration: BoxDecoration(
-                    color: const Color(0xff7DBABB),
-                    borderRadius: BorderRadius.circular(8)),
-                child: const Center(
-                  child: Text(
-                    "Verify",
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            const Text(
-              "Don’t receive the code yet?",
-              style: TextStyle(fontSize: 16),
-            ),
-            const Text(
-              "Resend code",
-                style: TextStyle(fontSize: 16,color: Color(0xff7DBABB))
+              //runs when every textfield is filled
+              onSubmit: (String verificationCode){
+                showDialog(
+                    context: context,
+                    builder: (context){
+                      return AlertDialog(
+                        title: Text("Verification Code"),
+                        content: Text('Code entered is $verificationCode'),
+                      );
+                    }
+                );
+              }, // end onSubmit
             ),
           ],
         ),

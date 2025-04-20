@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:married_app/View/Splash%20screens/splash_screen4.dart';
 
 class SplashScreen3 extends StatefulWidget {
@@ -17,7 +16,7 @@ class _SplashScreen3State extends State<SplashScreen3> {
       body:  Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/image/splash2.png"),
+                image: AssetImage("assets/image/Splash 2.png"),
                 fit: BoxFit.cover)),
         child: Center(
           child: Column(

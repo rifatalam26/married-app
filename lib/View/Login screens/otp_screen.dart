@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:get/get.dart';
+import 'package:married_app/View/Login%20screens/new_password_screen.dart';
 
 class OtpScreen extends StatefulWidget {
   const OtpScreen({super.key});
@@ -85,6 +87,41 @@ class _OtpScreenState extends State<OtpScreen> {
                       );
                     });
               }, // end onSubmit
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            InkWell(
+              onTap: () {
+                Get.to(const NewPasswordScreen());
+              },
+              child: Container(
+                height: 53,
+                width: 331,
+                decoration: BoxDecoration(
+                    color: const Color(0xff7DBABB),
+                    borderRadius: BorderRadius.circular(8)),
+                child: const Center(
+                  child: Text(
+                    "Verify",
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            const Text(
+              "Don’t receive the code yet?",
+              style: TextStyle(fontSize: 16),
+            ),
+            const Text(
+                "Resend code",
+                style: TextStyle(fontSize: 16,color: Color(0xff7DBABB))
             ),
           ],
         ),

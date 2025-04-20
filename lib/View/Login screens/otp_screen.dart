@@ -64,11 +64,10 @@ class _OtpScreenState extends State<OtpScreen> {
               fillColor: Colors.white,
               keyboardType: TextInputType.number,
               borderRadius: BorderRadius.circular(8),
-              enabledBorderColor: const Color(0xffDFE1E6),
-              fieldWidth: 65,
+              fieldWidth: 76,
               fieldHeight: 60,
               numberOfFields: 4,
-              borderColor: const Color(0xFFDFE1E6),
+              focusedBorderColor: const Color(0xffDFE1E6),
               //set to true to show as box or false to show as dash
               showFieldAsBox: true,
               //runs when a code is typed in

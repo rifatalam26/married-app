@@ -54,13 +54,21 @@ class _OtpScreenState extends State<OtpScreen> {
             ),
             const Padding(
               padding: EdgeInsets.only(right: 260),
-              child: Text("OTP Code",style: TextStyle(fontSize: 17,color: Color(0xffB0BABF)),),
+              child: Text(
+                "OTP Code",
+                style: TextStyle(fontSize: 17, color: Color(0xffB0BABF)),
+              ),
             ),
-            OtpTextField(decoration: InputDecoration(
-              
-            ),
+            OtpTextField(
+              filled: true,
+              fillColor: Colors.white,
+              keyboardType: TextInputType.number,
+              borderRadius: BorderRadius.circular(8),
+              enabledBorderColor: const Color(0xffDFE1E6),
+              fieldWidth: 65,
+              fieldHeight: 60,
               numberOfFields: 4,
-             // borderColor: Color(0xFFDFE1E6),
+              borderColor: const Color(0xFFDFE1E6),
               //set to true to show as box or false to show as dash
               showFieldAsBox: true,
               //runs when a code is typed in
@@ -68,16 +76,15 @@ class _OtpScreenState extends State<OtpScreen> {
                 //handle validation or checks here
               },
               //runs when every textfield is filled
-              onSubmit: (String verificationCode){
+              onSubmit: (String verificationCode) {
                 showDialog(
                     context: context,
-                    builder: (context){
+                    builder: (context) {
                       return AlertDialog(
                         title: Text("Verification Code"),
                         content: Text('Code entered is $verificationCode'),
                       );
-                    }
-                );
+                    });
               }, // end onSubmit
             ),
           ],

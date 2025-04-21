@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:married_app/View/Login%20screens/confirmation_screen.dart';
 
 class NewPasswordScreen extends StatefulWidget {
   const NewPasswordScreen({super.key});
@@ -49,7 +51,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                   fontWeight: FontWeight.bold,
                   color: Color(0xff5A5C5F)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
@@ -71,7 +73,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                         )),
                     hintText: "Password",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
-                    prefixIcon: Icon(Icons.lock,color: Color(0xffAAAAAA),),
+                    prefixIcon: const Icon(Icons.lock,color: Color(0xffAAAAAA),),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                       // borderSide: BorderSide(color: )
@@ -114,7 +116,28 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
               ),
             ),
             const SizedBox(
-              height: 22,
+              height: 200,
+            ),
+            InkWell(
+              onTap: () {
+                Get.to(const ConfirmationScreen());
+              },
+              child: Container(
+                height: 53,
+                width: 331,
+                decoration: BoxDecoration(
+                    color: const Color(0xff7DBABB),
+                    borderRadius: BorderRadius.circular(8)),
+                child: const Center(
+                  child: Text(
+                    "Confirm",
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+              ),
             ),
           ],
         ),

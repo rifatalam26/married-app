@@ -10,7 +10,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -34,17 +34,36 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontWeight: FontWeight.bold,
                         color: Color(0xff151515)),
                   ),
-                  Text("Good, Morning",style: TextStyle(fontSize: 16,color: Color(0xffB5B5B5)),)
+                  Text(
+                    "Good, Morning",
+                    style: TextStyle(fontSize: 16, color: Color(0xffB5B5B5)),
+                  )
                 ],
               ),
               SizedBox(
                 width: 100,
               ),
-              Stack(
-                clipBehavior:Clip.none,
-                children: [
-                  Icon(Icons.notifications_none)
-                ],
+              CircleAvatar(
+                backgroundColor: Colors.white,
+                radius: 28,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Icon(
+                      Icons.notifications_none,
+                      size: 40,
+                      color: Color(0xff7DBABB),
+                    ),
+                   Container(
+                     height: 10,
+                     width: 10,
+                     decoration: BoxDecoration(
+                       color: Colors.blue,
+                       borderRadius: BorderRadius.circular(100)
+                     ),
+                   )
+                  ],
+                ),
               )
             ],
           )

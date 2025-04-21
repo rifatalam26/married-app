@@ -68,6 +68,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(100),
                       ),
+                      child: const Center(
+                          child: Text(
+                        "3",
+                        style: TextStyle(
+                            color: Color(0xff7DBABB),
+                            fontSize: 8,
+                            fontWeight: FontWeight.bold),
+                      )),
                     )
                   ],
                 ),

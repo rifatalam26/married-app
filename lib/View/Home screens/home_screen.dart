@@ -40,8 +40,11 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(
                 width: 100,
               ),
-              CircleAvatar(
-
+              Stack(
+                clipBehavior:Clip.none,
+                children: [
+                  Icon(Icons.notifications_none)
+                ],
               )
             ],
           )

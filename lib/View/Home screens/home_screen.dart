@@ -10,21 +10,21 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                   radius: 30,
                   // backgroundColor: Colors.blue,
                   backgroundImage: NetworkImage(
                       "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_640.png")),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 width: 100,
               ),
               CircleAvatar(
@@ -49,19 +49,26 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.notifications_none,
                       size: 40,
                       color: Color(0xff7DBABB),
                     ),
-                   Container(
-                     height: 10,
-                     width: 10,
-                     decoration: BoxDecoration(
-                       color: Colors.blue,
-                       borderRadius: BorderRadius.circular(100)
-                     ),
-                   )
+                    Container(
+                      height: 15,
+                      width: 15,
+                      decoration: BoxDecoration(
+                        border: const Border(
+                          top: BorderSide(color: Color(0xff7DBABB), width: 2),
+                          bottom:
+                              BorderSide(color: Color(0xff7DBABB), width: 2),
+                          left: BorderSide(color: Color(0xff7DBABB), width: 2),
+                          right: BorderSide(color: Color(0xff7DBABB), width: 2),
+                        ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                    )
                   ],
                 ),
               )

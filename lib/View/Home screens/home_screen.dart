@@ -51,12 +51,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     const Icon(
                       Icons.notifications_none,
-                      size: 40,
+                      size: 45,
                       color: Color(0xff7DBABB),
                     ),
                     Container(
-                      height: 15,
-                      width: 15,
+                      height: 18,
+                      width: 18,
                       decoration: BoxDecoration(
                         border: const Border(
                           top: BorderSide(color: Color(0xff7DBABB), width: 2),
@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         "3",
                         style: TextStyle(
                             color: Color(0xff7DBABB),
-                            fontSize: 8,
+                            fontSize: 10,
                             fontWeight: FontWeight.bold),
                       )),
                     )

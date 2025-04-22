@@ -12,7 +12,7 @@ class NewPasswordScreen extends StatefulWidget {
 class _NewPasswordScreenState extends State<NewPasswordScreen> {
   TextEditingController passwordcontroller = TextEditingController();
   bool _secureText = true;
-  bool _secureText2 =true;
+  bool _secureText2 = true;
   bool check = false;
   @override
   Widget build(BuildContext context) {
@@ -44,12 +44,19 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
             const SizedBox(
               height: 50,
             ),
-            const Text(
-              "Please Enter Your New Password",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xff5A5C5F)),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 15,
+                ),
+                Text(
+                  "Please Enter Your New Password",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff5A5C5F)),
+                ),
+              ],
             ),
             const SizedBox(
               height: 20,
@@ -57,7 +64,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: TextFormField(
-                obscureText:_secureText,
+                obscureText: _secureText,
                 decoration: InputDecoration(
                     suffixIcon: IconButton(
                         onPressed: () {
@@ -66,14 +73,15 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                           });
                         },
                         icon: Icon(
-                          _secureText
-                              ? Icons.visibility_off
-                              : Icons.visibility,
+                          _secureText ? Icons.visibility_off : Icons.visibility,
                           color: Colors.grey.shade400,
                         )),
                     hintText: "Password",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
-                    prefixIcon: const Icon(Icons.lock,color: Color(0xffAAAAAA),),
+                    prefixIcon: const Icon(
+                      Icons.lock,
+                      color: Color(0xffAAAAAA),
+                    ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                       // borderSide: BorderSide(color: )
@@ -91,7 +99,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: TextFormField(
-                obscureText:_secureText2 ,
+                obscureText: _secureText2,
                 decoration: InputDecoration(
                     suffixIcon: IconButton(
                         onPressed: () {

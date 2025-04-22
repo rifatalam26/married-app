@@ -64,11 +64,14 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: 18,
                           decoration: BoxDecoration(
                             border: const Border(
-                              top: BorderSide(color: Color(0xff7DBABB), width: 2),
-                              bottom:
-                                  BorderSide(color: Color(0xff7DBABB), width: 2),
-                              left: BorderSide(color: Color(0xff7DBABB), width: 2),
-                              right: BorderSide(color: Color(0xff7DBABB), width: 2),
+                              top: BorderSide(
+                                  color: Color(0xff7DBABB), width: 2),
+                              bottom: BorderSide(
+                                  color: Color(0xff7DBABB), width: 2),
+                              left: BorderSide(
+                                  color: Color(0xff7DBABB), width: 2),
+                              right: BorderSide(
+                                  color: Color(0xff7DBABB), width: 2),
                             ),
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(100),
@@ -83,11 +86,17 @@ class _HomeScreenState extends State<HomeScreen> {
                           )),
                         ),
                       ),
-
                     ],
                   ),
                 )
               ],
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            const Text(
+              "Capture your perfect ceremony & ",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             )
           ],
         ),

@@ -123,6 +123,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/image/Frame 1.png"))),
               child: Row(
                 children: [
+                  const SizedBox(
+                    width: 10,
+                  ),
                   Container(
                     height: 60,
                     width: 60,

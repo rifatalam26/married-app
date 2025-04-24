@@ -205,24 +205,24 @@ class _HomeScreenState extends State<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Wedding Ceremony Music",
+                        "Wedding Reception Music",
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xffFFFFFF)),
+                            ),
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       Text(
-                        "Capture the key songs for your ",
+                        "Enter your key reception music ,",
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
                             color: Color(0xffFFFFFF)),
                       ),
                       Text(
-                        "wedding ceremony.",
+                        " from cake cutting to the first dance.",
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,

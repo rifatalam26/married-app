@@ -12,9 +12,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(15),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
@@ -43,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 const SizedBox(
-                  width: 92,
+                  width: 82,
                 ),
                 CircleAvatar(
                   backgroundColor: Colors.white,
@@ -97,6 +98,42 @@ class _HomeScreenState extends State<HomeScreen> {
             const Text(
               "Capture your perfect ceremony & ",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const Text(
+              "reception playlist.",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              "Capture your perfect ceremony & reception playlist.",
+              style: TextStyle(color: Color(0xff7F7F7F)),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 130,
+              width: 330,
+              decoration: const BoxDecoration(
+                borderRadius:BorderRadius.all(Radius.circular(10)),
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                      image: AssetImage("assets/image/Frame 1.png"))),
+              child: Row(children: [
+                Container(
+                  height: 60,
+                  width: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    image: const DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage('assets/image/Frame 3.png'))
+                  ),
+                ),
+
+              ],),
             )
           ],
         ),

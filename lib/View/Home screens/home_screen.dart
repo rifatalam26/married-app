@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(color: Color(0xff7F7F7F)),
             ),
             const SizedBox(
-              height: 15,
+              height: 30,
             ),
             Container(
               height: 130,
@@ -171,7 +171,68 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 ],
               ),
-            )
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 130,
+              width: 330,
+              decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage("assets/image/Frame 2.png"))),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    height: 60,
+                    width: 60,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        image: const DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage('assets/image/Frame 4.png'))),
+                  ),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Wedding Ceremony Music",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xffFFFFFF)),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Capture the key songs for your ",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xffFFFFFF)),
+                      ),
+                      Text(
+                        "wedding ceremony.",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xffFFFFFF)),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     radius: 30,
                     // backgroundColor: Colors.blue,
                     backgroundImage: NetworkImage(
-                        "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_640.png")),
+                        "https://www.google.com/imgres?q=profile%20picture%20&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2019%2F08%2F11%2F18%2F59%2Ficon-4399701_640.png&imgrefurl=https%3A%2F%2Fpixabay.com%2Fillustrations%2Fsearch%2Fprofile%2520picture%2F&docid=r2ZSI0smc5_E_M&tbnid=5tEk3WayougHVM&vet=12ahUKEwihtbHewfOMAxXLSGwGHeVBPTsQM3oFCIUBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwihtbHewfOMAxXLSGwGHeVBPTsQM3oFCIUBEAA")),
                 const SizedBox(
                   width: 15,
                 ),
@@ -220,15 +220,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Text(
                         "Enter your key reception music ,",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color(0xff636363)),
+                        style:
+                            TextStyle(fontSize: 15, color: Color(0xff636363)),
                       ),
                       Text(
                         " from cake cutting to the first.",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color(0xff636363)),
+                        style:
+                            TextStyle(fontSize: 15, color: Color(0xff636363)),
                       ),
                     ],
                   ),

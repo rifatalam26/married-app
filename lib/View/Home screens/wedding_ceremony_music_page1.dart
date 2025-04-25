@@ -53,7 +53,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               style: TextStyle(fontSize: 15, color: Color(0xff7F7F7F)),
             ),
             const SizedBox(
-              height: 15,
+              height: 20,
             ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.end,
@@ -73,7 +73,29 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
                   ),
                 )
               ],
-            )
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              "Team Groom Aisle Entrance Song (e.g. Beer Boys,",
+              style: TextStyle(),
+            ),
+            const Text(
+              "Flower Dudes, Flower Granny’s etc)",
+              style: TextStyle(),
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                  hintText: "Song Title & Artist.",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    // borderSide: BorderSide(color: )
+                  ),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8))),
+            ),
           ],
         ),
       ),

@@ -168,7 +168,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-
                 ],
               ),
             ),
@@ -180,6 +179,11 @@ class _HomeScreenState extends State<HomeScreen> {
               width: 330,
               decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
+                  border: Border(
+                      top: BorderSide(width: 2, color: Color(0xff7DBABB)),
+                      bottom: BorderSide(width: 2, color: Color(0xff7DBABB)),
+                      left: BorderSide(width: 2, color: Color(0xff7DBABB)),
+                      right: BorderSide(width: 2, color: Color(0xff7DBABB))),
                   image: DecorationImage(
                       fit: BoxFit.cover,
                       image: AssetImage("assets/image/Frame 2.png"))),
@@ -207,9 +211,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       Text(
                         "Wedding Reception Music",
                         style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            ),
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       SizedBox(
                         height: 10,
@@ -219,14 +223,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xffFFFFFF)),
+                            color: Color(0xff636363)),
                       ),
                       Text(
-                        " from cake cutting to the first dance.",
+                        " from cake cutting to the first.",
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xffFFFFFF)),
+                            color: Color(0xff636363)),
                       ),
                     ],
                   ),

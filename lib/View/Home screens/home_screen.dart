@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     clipBehavior: Clip.none,
                     children: [
                       const Icon(
-                        Icons.notifications_none,
+                        Icons.notifications_none_outlined,
                         size: 45,
                         color: Color(0xff7DBABB),
                       ),
@@ -202,7 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             image: AssetImage('assets/image/Frame 4.png'))),
                   ),
                   const SizedBox(
-                    width: 15,
+                    width: 8,
                   ),
                   const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -222,14 +222,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         "Enter your key reception music ,",
                         style: TextStyle(
                             fontSize: 15,
-                            fontWeight: FontWeight.bold,
                             color: Color(0xff636363)),
                       ),
                       Text(
                         " from cake cutting to the first.",
                         style: TextStyle(
                             fontSize: 15,
-                            fontWeight: FontWeight.bold,
                             color: Color(0xff636363)),
                       ),
                     ],

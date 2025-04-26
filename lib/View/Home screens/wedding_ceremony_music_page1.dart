@@ -85,6 +85,53 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               "Flower Dudes, Flower Granny’s etc)",
               style: TextStyle(),
             ),
+            const SizedBox(
+              height: 15,
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                //suffixIcon: Icons.vector,
+                  hintText: "Song Title & Artist.",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    // borderSide: BorderSide(color: )
+                  ),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8))),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              "Page Boys / Flower Girls / Bridesmaids Entrance Song",
+              style: TextStyle(),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                //suffixIcon: Icons.vector,
+                  hintText: "Song Title & Artist.",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    // borderSide: BorderSide(color: )
+                  ),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8))),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              "Main Bridal Entrance Song / Aisle Song ",
+              style: TextStyle(),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
             TextFormField(
               decoration: InputDecoration(
                 //suffixIcon: Icons.vector,

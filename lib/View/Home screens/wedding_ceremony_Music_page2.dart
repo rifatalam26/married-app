@@ -60,21 +60,6 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                   )
                 ],
               ),
-              const Text(
-                "“Simply enter your choices below & start to organise",
-                style: TextStyle(fontSize: 15, color: Color(0xff7F7F7F)),
-              ),
-              const Text(
-                "your key ceremony music, if you don’t want to do ",
-                style: TextStyle(fontSize: 15, color: Color(0xff7F7F7F)),
-              ),
-              const Text(
-                "something, simply say NA (not applicable)”",
-                style: TextStyle(fontSize: 15, color: Color(0xff7F7F7F)),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
               const SizedBox(
                 height: 15,
               ),
@@ -82,8 +67,8 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Team Groom Aisle Entrance Song (e.g. Beer Boys,",
-                    style: TextStyle(),
+                    "Flower Girls / Bridesmaids Entrance / Aisle Song",
+                    style: TextStyle(fontSize: 15, ),
                   ),
                 ],
               ),
@@ -91,8 +76,8 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Flower Dudes, Flower Granny’s etc)",
-                    style: TextStyle(),
+                    "before bride song (Starting Song)",
+                    style: TextStyle(fontSize: 15,),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:married_app/View/Home%20screens/wedding_ceremony_Music_page2.dart';
 import 'package:married_app/View/Login%20screens/login_screen.dart';
 
 import 'View/Home screens/home_screen.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WeddingCeremonyMusicPage1(),
+      home: WeddingCeremonyMusicPage2(),
     );
   }
 }

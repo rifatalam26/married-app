@@ -64,7 +64,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
                     height: 40,
                     width: 100,
                     decoration: BoxDecoration(
-                        color: Color(0xff7DBABB),
+                        color: const Color(0xff7DBABB),
                         borderRadius: BorderRadius.circular(8)),
                     child: const Center(
                       child: Text(
@@ -261,22 +261,18 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               const SizedBox(
                 height: 15,
               ),
-              SizedBox(
-                height: 200,
-                width: 250,
-                child: TextField(
-                  decoration: InputDecoration(
-                      suffixIcon: const Icon(Icons.link),
-                      hintText: "Song Title & Artist.",
-                      hintStyle: TextStyle(color: Colors.grey.shade400),
-                      // focusedBorder: OutlineInputBorder(
-                      //   borderRadius: BorderRadius.circular(8),
-                      //   // borderSide: BorderSide(color: )
-                      // ),
-                      // border: OutlineInputBorder(
-                      //     borderRadius: BorderRadius.circular(8)),
-                  )),
-              ),
+              TextField(
+                maxLines: 6,
+                decoration: InputDecoration(
+                    suffixIcon: const Icon(Icons.link),
+                    hintText: "Song Title & Artist.",
+                    hintStyle: TextStyle(color: Colors.grey.shade400),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8)),
+                )),
               const SizedBox(
                 height: 20,
               ),

@@ -69,7 +69,8 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
                     child: const Center(
                       child: Text(
                         "Add List",
-                        style: TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
+                        style:
+                            TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
                       ),
                     ),
                   )
@@ -101,7 +102,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  //suffixIcon: Icons.vector,
+                    //suffixIcon: Icons.vector,
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -128,7 +129,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  //suffixIcon: Icons.vector,
+                    //suffixIcon: Icons.vector,
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -155,7 +156,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  //suffixIcon: Icons.vector,
+                    //suffixIcon: Icons.vector,
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -182,7 +183,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  suffixIcon: const Icon(Icons.link),
+                    suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -262,24 +263,28 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
                 height: 15,
               ),
               TextField(
-                maxLines: 6,
-                decoration: InputDecoration(
-                    suffixIcon: const Icon(Icons.link),
-                    hintText: "Song Title & Artist.",
+                  maxLines: 6,
+                  decoration: InputDecoration(
+                   // suffixIcon: const Icon(Icons.link),
+                    hintText:
+                        "Please let me know anything else you would like to share with me regarding your music....",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8)),
-                )),
+                  )),
               const SizedBox(
-                height: 20,
+                height: 30,
               ),
               InkWell(
-                onTap: (){
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context)=>const WeddingCeremonyMusicPage1()));
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const WeddingCeremonyMusicPage1()));
                 },
                 child: Container(
                   height: 53,

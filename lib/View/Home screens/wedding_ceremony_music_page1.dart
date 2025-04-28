@@ -102,7 +102,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    //suffixIcon: Icons.vector,
+                    suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -129,7 +129,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    //suffixIcon: Icons.vector,
+                    suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -156,7 +156,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    //suffixIcon: Icons.vector,
+                    suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(

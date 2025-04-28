@@ -4,6 +4,7 @@ import 'package:married_app/View/Home%20screens/wedding_ceremony_music_page2.dar
 import 'package:married_app/View/Login%20screens/login_screen.dart';
 
 import 'View/Home screens/home_screen.dart';
+import 'View/Home screens/wedding_ceremoney_music_page_3.dart';
 import 'View/Home screens/wedding_ceremony_music_page1.dart';
 import 'View/Login screens/confirmation_screen.dart';
 import 'View/Login screens/new_password_screen.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WeddingCeremonyMusicPage2(),
+      home: WeddingCeremonyMusicPage3(),
     );
   }
 }

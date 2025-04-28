@@ -280,11 +280,13 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              const WeddingCeremonyMusicPage1()));
+                  showDialog(
+                      context: context,
+                      builder: (context){
+                        return const AlertDialog(
+                          title: Text("Paste your music link below and"),
+                        );
+                      });
                 },
                 child: Container(
                   height: 53,
@@ -302,6 +304,9 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
                     ),
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 30,
               ),
             ],
           ),

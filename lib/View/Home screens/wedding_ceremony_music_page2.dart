@@ -184,6 +184,33 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
+                    "Signing Song (2)",
+                    style: TextStyle(),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                    suffixIcon: const Icon(Icons.link),
+                    hintText: "Song Title & Artist.",
+                    hintStyle: TextStyle(color: Colors.grey.shade400),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      // borderSide: BorderSide(color: )
+                    ),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
                     "Any other notes / comments",
                     style: TextStyle(),
                   ),

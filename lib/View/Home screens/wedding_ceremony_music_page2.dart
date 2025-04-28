@@ -4,7 +4,8 @@ class WeddingCeremonyMusicPage2 extends StatefulWidget {
   const WeddingCeremonyMusicPage2({super.key});
 
   @override
-  State<WeddingCeremonyMusicPage2> createState() => _WeddingCeremonyMusicPage2State();
+  State<WeddingCeremonyMusicPage2> createState() =>
+      _WeddingCeremonyMusicPage2State();
 }
 
 class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
@@ -54,7 +55,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                       child: Text(
                         "Add List",
                         style:
-                        TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
+                            TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
                       ),
                     ),
                   )
@@ -68,7 +69,9 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                 children: [
                   Text(
                     "Flower Girls / Bridesmaids Entrance / Aisle Song",
-                    style: TextStyle(fontSize: 15, ),
+                    style: TextStyle(
+                      fontSize: 15,
+                    ),
                   ),
                 ],
               ),
@@ -77,7 +80,9 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                 children: [
                   Text(
                     "before bride song (Starting Song)",
-                    style: TextStyle(fontSize: 15,),
+                    style: TextStyle(
+                      fontSize: 15,
+                    ),
                   ),
                 ],
               ),
@@ -224,7 +229,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                   decoration: InputDecoration(
                     // suffixIcon: const Icon(Icons.link),
                     hintText:
-                    "Please let me know anything else you would like to share with me regarding your music....",
+                        "Please let me know anything else you would like to share with me regarding your music....",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -241,7 +246,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                          const WeddingCeremonyMusicPage2()));
+                              const WeddingCeremonyMusicPage2()));
                 },
                 child: Container(
                   height: 53,
@@ -260,6 +265,29 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                   ),
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 53,
+                width: 331,
+                decoration: const BoxDecoration(
+                    border: Border(
+                      top: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                      bottom: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                      left: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                      right: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(8))),
+                child: const Center(
+                    child: Text(
+                  "Export As a PDF",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff7DBABB)),
+                )),
+              )
             ],
           ),
         ),

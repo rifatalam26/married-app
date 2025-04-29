@@ -50,7 +50,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
                 style: TextStyle(fontSize: 14, color: Color(0xff7F7F7F)),
               ),
               const Text(
-                "your key ceremony music, if you don’t want to do ",
+                "your key reception music, if you don’t want to do",
                 style: TextStyle(fontSize: 15, color: Color(0xff7F7F7F)),
               ),
               const Text(

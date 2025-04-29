@@ -359,8 +359,6 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage3> {
                         return AlertDialog(
                           title: Center(
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 const Text(
                                   " Download Your Wedding ",

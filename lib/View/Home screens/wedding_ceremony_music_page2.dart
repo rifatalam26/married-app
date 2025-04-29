@@ -250,15 +250,15 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                             children: [
                               const Text(
                                 "Paste your music link below and",
-                                style: TextStyle(fontSize: 15),
+                                style: TextStyle(fontSize: 16),
                               ),
                               const Text(
                                 "hit save to finalize your ",
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 16),
                               ),
                               const Text(
                                 "selection!",
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 16),
                               ),
                               const SizedBox(
                                 height: 10,

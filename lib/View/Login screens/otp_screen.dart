@@ -82,7 +82,7 @@ class _OtpScreenState extends State<OtpScreen> {
                     context: context,
                     builder: (context) {
                       return AlertDialog(
-                        title: Text("Verification Code"),
+                        title: const Text("Verification Code"),
                         content: Text('Code entered is $verificationCode'),
                       );
                     });

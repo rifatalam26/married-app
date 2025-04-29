@@ -1,18 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:married_app/View/Home%20screens/wedding_ceremony_music_page2.dart';
-import 'package:married_app/View/Login%20screens/login_screen.dart';
 
-import 'View/Home screens/home_screen.dart';
-import 'View/Home screens/wedding_ceremoney_music_page_3.dart';
-import 'View/Home screens/wedding_ceremony_music_page1.dart';
-import 'View/Login screens/confirmation_screen.dart';
-import 'View/Login screens/new_password_screen.dart';
-import 'View/Login screens/otp_screen.dart';
-import 'View/Login screens/phone_number_screen.dart';
-import 'View/Login screens/signup_screen.dart';
-import 'View/Login screens/verify_phone_number.dart';
-import 'View/Splash screens/splash_screen.dart';
+import 'View/Home screens/wedding_ceremony_music_page_3.dart';
 
 
 void main() {

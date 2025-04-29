@@ -250,15 +250,15 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage3> {
                             children: [
                               const Text(
                                 "Paste your music link below and",
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 16),
                               ),
                               const Text(
                                 "hit save to finalize your ",
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 16),
                               ),
                               const Text(
                                 "selection!",
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 16),
                               ),
                               const SizedBox(
                                 height: 10,
@@ -357,112 +357,111 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage3> {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          title: Column(
-                            children: [
-                              const Text(
-                                " Download Your Wedding ",
-                                style: TextStyle(fontSize: 20),
-                              ),
-                              const Text(
-                                "Ceremony Music Selections! 💍",
-                                style: TextStyle(fontSize: 20),
-                              ),
-                              const SizedBox(
-                                height: 15,
-                              ),
-                              const Text(
-                                " Your special day deserves the perfect",
-                                style: TextStyle(fontSize: 12,
-                                color: Color(0xff8D8D8D)
+                          title: Center(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                const Text(
+                                  " Download Your Wedding ",
+                                  style: TextStyle(fontSize: 16),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              const Text(
-                                " soundtrack! 🎶",
-                                style: TextStyle(fontSize: 12,
-                                    color: Color(0xff8D8D8D)
+                                const Text(
+                                  "Ceremony Music Selections! 💍",
+                                  style: TextStyle(fontSize: 16),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 15,
-                              ),
-                              const Text(
-                                " You've carefully selected the music for your wedding ",
-                                style: TextStyle(fontSize: 12,
-                                    color: Color(0xff8D8D8D)
+                                const SizedBox(
+                                  height: 15,
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              const Text(
-                                "ceremony. Now, download a professional PDF summary",
-                                style: TextStyle(fontSize: 12,
-                                    color: Color(0xff8D8D8D)
+                                const Text(
+                                  " Your special day deserves the perfect",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              const Text(
-                                "to share with your celebrant, DJ, or venue coordinator.",
-                                style: TextStyle(fontSize: 12,
-                                    color: Color(0xff8D8D8D)
+                                const SizedBox(
+                                  height: 5,
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              Container(
-                                height: 53,
-                                width: 331,
-                                decoration: BoxDecoration(
-                                    color: const Color(0xff7DBABB),
-                                    borderRadius: BorderRadius.circular(8)),
-                                child: const Center(
-                                  child: Text(
-                                    "Download PDF",
+                                const Text(
+                                  " soundtrack! 🎶",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 15,
+                                ),
+                                const Text(
+                                  " You've carefully selected the music for your wedding ",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                const Text(
+                                  "ceremony. Now, download a professional PDF summary",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                const Text(
+                                  "to share with your celebrant, DJ, or venue coordinator.",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Container(
+                                  height: 53,
+                                  width: 331,
+                                  decoration: BoxDecoration(
+                                      color: const Color(0xff7DBABB),
+                                      borderRadius: BorderRadius.circular(8)),
+                                  child: const Center(
+                                    child: Text(
+                                      "Download PDF",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white),
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                  height: 53,
+                                  width: 331,
+                                  decoration: const BoxDecoration(
+                                      border: Border(
+                                        top: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        bottom: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        left: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        right: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                      ),
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(8))),
+                                  child: const Center(
+                                      child: Text(
+                                    "Cancel",
                                     style: TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.white),
-                                  ),
+                                        color: Color(0xff7DBABB)),
+                                  )),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              Container(
-                                height: 53,
-                                width: 331,
-                                decoration: const BoxDecoration(
-                                    border: Border(
-                                      top: BorderSide(
-                                          width: 1, color: Color(0xff7DBABB)),
-                                      bottom: BorderSide(
-                                          width: 1, color: Color(0xff7DBABB)),
-                                      left: BorderSide(
-                                          width: 1, color: Color(0xff7DBABB)),
-                                      right: BorderSide(
-                                          width: 1, color: Color(0xff7DBABB)),
-                                    ),
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(8))),
-                                child: const Center(
-                                    child: Text(
-                                  "Cancel",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Color(0xff7DBABB)),
-                                )),
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                            ],
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                              ],
+                            ),
                           ),
                         );
                       });

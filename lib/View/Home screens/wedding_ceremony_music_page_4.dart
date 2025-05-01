@@ -54,7 +54,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
                 style: TextStyle(fontSize: 15, color: Color(0xff7F7F7F)),
               ),
               const Text(
-                "something, simply say NA (not applicable)”",
+                "something, simply say NA - not applicable”",
                 style: TextStyle(fontSize: 15, color: Color(0xff7F7F7F)),
               ),
               const SizedBox(

@@ -68,7 +68,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Flower Girls / Bridesmaids Entrance / Aisle Song",
+                    "Bridal Party Enter Reception(I will call names etc)",
                     style: TextStyle(
                       fontSize: 15,
                     ),

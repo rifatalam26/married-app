@@ -151,7 +151,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Main Bridal Entrance Song / Aisle Song ",
+                    "Father Daughter Dance",
                     style: TextStyle(),
                   ),
                 ],
@@ -178,7 +178,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Signing Song (1)",
+                    "Cake signing Song",
                     style: TextStyle(),
                   ),
                 ],
@@ -205,7 +205,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Signing Song (2)",
+                    "Garter Toss",
                     style: TextStyle(),
                   ),
                 ],
@@ -232,7 +232,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Aisle Exit Song (Concludes the Ceremony)",
+                    "Bouquet Toss ",
                     style: TextStyle(),
                   ),
                 ],

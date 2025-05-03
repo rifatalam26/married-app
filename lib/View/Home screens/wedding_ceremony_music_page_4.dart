@@ -61,7 +61,6 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
                 height: 20,
               ),
               Row(
-                crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
@@ -83,22 +82,24 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
               const SizedBox(
                 height: 15,
               ),
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text(
-                    "Team Groom Aisle Entrance Song (e.g. Beer Boys,",
-                    style: TextStyle(),
+                  const Text(
+                    "Bridal Party Entry to Reception ",
+                    style: TextStyle(fontSize: 16),
                   ),
-                ],
-              ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text(
-                    "Flower Dudes, Flower Granny’s etc)",
-                    style: TextStyle(),
-                  ),
+                 const SizedBox(width: 82,),
+                 Container(
+                   height: 30,
+                   width: 30,
+                   decoration: const BoxDecoration(
+                     image: DecorationImage(
+                       fit: BoxFit.cover,
+                         image: AssetImage("assets/image/delete.png"))
+                   ),
+                 )
+                 // Icon(Icons.delete)
                 ],
               ),
               const SizedBox(
@@ -123,7 +124,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage4> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Page Boys/Flower Girls/Bridesmaids Entrance Song",
+                    "Couples 1st Dance",
                     style: TextStyle(),
                   ),
                 ],

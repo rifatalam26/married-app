@@ -3,6 +3,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'View/Home screens/wedding_ceremony_music_page_3.dart';
 import 'View/Home screens/wedding_ceremony_music_page_4.dart';
+import 'View/Home screens/wedding_reception_music1.dart';
 
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WeddingCeremonyMusicPage4(),
+      home: WeddingReceptionMusic1(),
     );
   }
 }

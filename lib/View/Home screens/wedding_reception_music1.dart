@@ -137,7 +137,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    suffixIcon: const Icon(Icons.link),
+                   // suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -164,7 +164,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    suffixIcon: const Icon(Icons.link),
+                   // suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -191,7 +191,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    suffixIcon: const Icon(Icons.link),
+                   // suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -208,7 +208,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Any other notes / comments",
+                    "Signing Song (2)",
                     style: TextStyle(),
                   ),
                 ],
@@ -216,19 +216,96 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
               const SizedBox(
                 height: 15,
               ),
-              TextField(
-                  maxLines: 6,
-                  decoration: InputDecoration(
-                    // suffixIcon: const Icon(Icons.link),
-                    hintText:
-                    "Please let me know anything else you would like to share with me regarding your music....",
+              TextFormField(
+                decoration: InputDecoration(
+                  // suffixIcon: const Icon(Icons.link),
+                    hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
+                      // borderSide: BorderSide(color: )
                     ),
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(8)),
-                  )),
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Cake Signing Song",
+                    style: TextStyle(),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  // suffixIcon: const Icon(Icons.link),
+                    hintText: "Song Title & Artist.",
+                    hintStyle: TextStyle(color: Colors.grey.shade400),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      // borderSide: BorderSide(color: )
+                    ),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Garter Toss (optional)",
+                    style: TextStyle(),
+                  ),
+                ],
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  // suffixIcon: const Icon(Icons.link),
+                    hintText: "Song Title & Artist.",
+                    hintStyle: TextStyle(color: Colors.grey.shade400),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      // borderSide: BorderSide(color: )
+                    ),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Throwaway Bouquet Toss",
+                    style: TextStyle(),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  // suffixIcon: const Icon(Icons.link),
+                    hintText: "Song Title & Artist.",
+                    hintStyle: TextStyle(color: Colors.grey.shade400),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      // borderSide: BorderSide(color: )
+                    ),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
               const SizedBox(
                 height: 30,
               ),

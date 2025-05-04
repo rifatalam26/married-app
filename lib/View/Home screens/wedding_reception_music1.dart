@@ -18,6 +18,9 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const SizedBox(
+                height: 50,
+              ),
               Row(
                 children: [
                   IconButton(
@@ -75,23 +78,12 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                   ),
                 ],
               ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text(
-                    "before bride song (Starting Song)",
-                    style: TextStyle(
-                      fontSize: 15,
-                    ),
-                  ),
-                ],
-              ),
               const SizedBox(
                 height: 15,
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    suffixIcon: const Icon(Icons.link),
+                   // suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -108,7 +100,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Entrance / Aisle Song (Starting Song)",
+                    "Its Dance",
                     style: TextStyle(),
                   ),
                 ],
@@ -118,7 +110,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    suffixIcon: const Icon(Icons.link),
+                   // suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
@@ -135,7 +127,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Main Bridal Entrance Song / Aisle Song ",
+                    "Its Dance (Couple Dance)",
                     style: TextStyle(),
                   ),
                 ],

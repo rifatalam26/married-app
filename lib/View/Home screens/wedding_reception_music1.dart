@@ -191,33 +191,6 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                   // suffixIcon: const Icon(Icons.link),
-                    hintText: "Song Title & Artist.",
-                    hintStyle: TextStyle(color: Colors.grey.shade400),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8),
-                      // borderSide: BorderSide(color: )
-                    ),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(8))),
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text(
-                    "Signing Song (2)",
-                    style: TextStyle(),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              TextFormField(
-                decoration: InputDecoration(
                   // suffixIcon: const Icon(Icons.link),
                     hintText: "Song Title & Artist.",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
@@ -307,7 +280,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                         borderRadius: BorderRadius.circular(8))),
               ),
               const SizedBox(
-                height: 30,
+                height: 20,
               ),
               InkWell(
                 onTap: () {
@@ -434,14 +407,14 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                                   style: TextStyle(fontSize: 16),
                                 ),
                                 const Text(
-                                  "Ceremony Music Selections! 💍",
+                                  "Ceremony Music Selections! 🎉",
                                   style: TextStyle(fontSize: 16),
                                 ),
                                 const SizedBox(
                                   height: 15,
                                 ),
                                 const Text(
-                                  " Your special day deserves the perfect",
+                                  "  Make your reception unforgettable with",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -449,7 +422,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                                   height: 5,
                                 ),
                                 const Text(
-                                  " soundtrack! 🎶",
+                                  " perfect playlist! ✨",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -457,7 +430,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                                   height: 15,
                                 ),
                                 const Text(
-                                  " You've carefully selected the music for your wedding ",
+                                  "Your carefully curated music choices are ready for",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -465,7 +438,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                                   height: 5,
                                 ),
                                 const Text(
-                                  "ceremony. Now, download a professional PDF summary",
+                                  "download. Share your selections with your DJ, band, or",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -473,7 +446,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                                   height: 5,
                                 ),
                                 const Text(
-                                  "to share with your celebrant, DJ, or venue coordinator.",
+                                  "venue to ensure everything goes smoothly.",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),

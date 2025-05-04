@@ -430,7 +430,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                                   height: 15,
                                 ),
                                 const Text(
-                                  "Your carefully curated music choices are ready for",
+                                  "Your carefully curated music choices are",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -438,7 +438,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                                   height: 5,
                                 ),
                                 const Text(
-                                  "download. Share your selections with your DJ, band, or",
+                                  "download. Share your selections with your",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -446,7 +446,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic1> {
                                   height: 5,
                                 ),
                                 const Text(
-                                  "venue to ensure everything goes smoothly.",
+                                  "venue to ensure goes smoothly.",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),

@@ -434,14 +434,14 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic2> {
                                   style: TextStyle(fontSize: 16),
                                 ),
                                 const Text(
-                                  "Ceremony Music Selections! 💍",
+                                  "Ceremony Music Selections! 🎉",
                                   style: TextStyle(fontSize: 16),
                                 ),
                                 const SizedBox(
                                   height: 15,
                                 ),
                                 const Text(
-                                  " Your special day deserves the perfect",
+                                  "  Make your reception unforgettable with",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -449,7 +449,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic2> {
                                   height: 5,
                                 ),
                                 const Text(
-                                  " soundtrack! 🎶",
+                                  " perfect playlist! ✨",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -457,7 +457,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic2> {
                                   height: 15,
                                 ),
                                 const Text(
-                                  " You've carefully selected the music for your wedding ",
+                                  "Your carefully curated music choices are",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -465,7 +465,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic2> {
                                   height: 5,
                                 ),
                                 const Text(
-                                  "ceremony. Now, download a professional PDF summary",
+                                  "download. Share your selections with your",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),
@@ -473,7 +473,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingReceptionMusic2> {
                                   height: 5,
                                 ),
                                 const Text(
-                                  "to share with your celebrant, DJ, or venue coordinator.",
+                                  "venue to ensure goes smoothly.",
                                   style: TextStyle(
                                       fontSize: 12, color: Color(0xff8D8D8D)),
                                 ),

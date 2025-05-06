@@ -16,7 +16,7 @@ class _WeddingCeremonyMusicListState extends State<WeddingCeremonyMusicList> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           const SizedBox(
-            height: 50,
+            height: 60,
           ),
           Row(
             children: [

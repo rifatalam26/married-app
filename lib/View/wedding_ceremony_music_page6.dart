@@ -18,6 +18,9 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const SizedBox(
+                height: 50,
+              ),
               Row(
                 children: [
                   IconButton(
@@ -55,7 +58,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                       child: Text(
                         "Add List",
                         style:
-                        TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
+                            TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
                       ),
                     ),
                   )
@@ -68,7 +71,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Team Groom Aisle Entrance Song (e.g. Beer Boys,",
+                    "Flower Girls/Bridesmaids Entrance/Aisle Song",
                     style: TextStyle(),
                   ),
                 ],
@@ -77,34 +80,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Flower Dudes, Flower Granny’s etc)",
-                    style: TextStyle(),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              TextFormField(
-                decoration: InputDecoration(
-                    suffixIcon: const Icon(Icons.link),
-                    hintText: "Song Title & Artist.",
-                    hintStyle: TextStyle(color: Colors.grey.shade400),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8),
-                      // borderSide: BorderSide(color: )
-                    ),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(8))),
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text(
-                    "Page Boys / Flower Girls / Bridesmaids Entrance Song",
+                    "before bride song (Starting Song)",
                     style: TextStyle(),
                   ),
                 ],
@@ -131,7 +107,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Main Bridal Entrance Song / Aisle Song ",
+                    "Entrance / Aisle Song (Starting Song)",
                     style: TextStyle(),
                   ),
                 ],
@@ -158,7 +134,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Signing Song (1)",
+                    "Signing Song A",
                     style: TextStyle(),
                   ),
                 ],
@@ -185,7 +161,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Signing Song (2)",
+                    "Signing Song B",
                     style: TextStyle(),
                   ),
                 ],
@@ -212,8 +188,54 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Aisle Exit Song (Concludes the Ceremony)",
+                    "Exit Song (Conclude Ceremony)",
                     style: TextStyle(),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                    suffixIcon: const Icon(Icons.link),
+                    hintText: "Song Title & Artist.",
+                    hintStyle: TextStyle(color: Colors.grey.shade400),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      // borderSide: BorderSide(color: )
+                    ),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 45,
+                    width: 340,
+                    decoration: BoxDecoration(
+                        color: const Color(0xffFFFFFF),
+                        borderRadius: BorderRadius.circular(13),
+                        border: const Border(
+                            top: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                            bottom:
+                                BorderSide(color: Color(0xffE0E0E0), width: 2),
+                            left:
+                                BorderSide(color: Color(0xffE0E0E0), width: 2),
+                            right: BorderSide(
+                                color: Color(0xffE0E0E0), width: 2))),
+                    child: const Center(child: Row(
+                      children: [ SizedBox(
+                        width: 10,
+                      ),
+                        Text("Add title here.."),
+
+                      ],
+                    )),
                   ),
                 ],
               ),
@@ -252,7 +274,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                   decoration: InputDecoration(
                     // suffixIcon: const Icon(Icons.link),
                     hintText:
-                    "Please let me know anything else you would like to share with me regarding your music....",
+                        "Please let me know anything else you would like to share with me regarding your music....",
                     hintStyle: TextStyle(color: Colors.grey.shade400),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -267,7 +289,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                 onTap: () {
                   showDialog(
                       context: context,
-                      builder: (context){
+                      builder: (context) {
                         return const AlertDialog(
                           title: Text("Paste your music link below and"),
                         );
@@ -289,6 +311,29 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage6> {
                     ),
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Container(
+                height: 53,
+                width: 331,
+                decoration: const BoxDecoration(
+                    border: Border(
+                      top: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                      bottom: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                      left: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                      right: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(8))),
+                child: const Center(
+                    child: Text(
+                      "Export As a PDF",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff7DBABB)),
+                    )),
               ),
               const SizedBox(
                 height: 30,

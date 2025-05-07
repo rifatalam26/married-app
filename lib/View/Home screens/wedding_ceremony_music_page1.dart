@@ -18,6 +18,9 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const SizedBox(
+                height: 50,
+              ),
               Row(
                 children: [
                   IconButton(
@@ -119,7 +122,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Page Boys / Flower Girls / Bridesmaids Entrance Song",
+                    "Page Boys/Flower Girls/Bridesmaids Entrance Song",
                     style: TextStyle(),
                   ),
                 ],

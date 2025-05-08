@@ -142,35 +142,38 @@ class _ProfilePage1State extends State<ProfilePage1> {
               const SizedBox(
                 height: 15,
               ),
-              Container(
-                height: 65,
-                width: 330,
-                decoration: BoxDecoration(
-                    // color: Colors.blue,
-                    borderRadius: BorderRadius.circular(13),
-                    border: const Border(
-                        top: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        left: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
-                child: const Row(
-                  children: [
-                    SizedBox(
-                      width: 15,
-                    ),
-                    Icon(
-                      Icons.settings,
-                      color: Color(0xff9B9B9B),
-                      size: 32,
-                    ),
-                    SizedBox(
-                      width: 13,
-                    ),
-                    Text(
-                      "Setting",
-                      style: TextStyle(fontSize: 20, color: Color(0xff171717)),
-                    )
-                  ],
+              InkWell(
+                onTap: (){},
+                child: Container(
+                  height: 65,
+                  width: 330,
+                  decoration: BoxDecoration(
+                      // color: Colors.blue,
+                      borderRadius: BorderRadius.circular(13),
+                      border: const Border(
+                          top: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          left: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
+                  child: const Row(
+                    children: [
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Icon(
+                        Icons.settings,
+                        color: Color(0xff9B9B9B),
+                        size: 32,
+                      ),
+                      SizedBox(
+                        width: 13,
+                      ),
+                      Text(
+                        "Setting",
+                        style: TextStyle(fontSize: 20, color: Color(0xff171717)),
+                      )
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(

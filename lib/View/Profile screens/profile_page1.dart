@@ -70,6 +70,7 @@ class _ProfilePage1State extends State<ProfilePage1> {
                 height: 50,
               ),
               InkWell(
+                onTap: (){},
                 child: Container(
                   height: 65,
                   width: 330,

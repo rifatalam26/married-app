@@ -39,26 +39,36 @@ class _ProfilePage2State extends State<ProfilePage2> {
           const SizedBox(
             height: 30,
           ),
-          const Row(
+           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(
                 children: [
                   Stack(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 60,
                         //backgroundColor: Colors.blue,
                         backgroundImage:
                         AssetImage("assets/image/Ellipse 107.png"),
                       ),
-
+                      Container(
+                       height: 35,
+                        width: 35,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(100),
+                          image: const DecorationImage(
+                              //fit: BoxFit.cover,
+                              image: AssetImage("assets/image/Vector.png"))
+                        ),
+                      )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Profile",
                     style: TextStyle(
                         fontSize: 22, fontWeight: FontWeight.bold),

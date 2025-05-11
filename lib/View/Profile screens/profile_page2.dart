@@ -46,20 +46,22 @@ class _ProfilePage2State extends State<ProfilePage2> {
                 children: [
                   Stack(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 60,
                         //backgroundColor: Colors.blue,
                         backgroundImage:
                         AssetImage("assets/image/Ellipse 107.png"),
                       ),
                       CircleAvatar(
-                        radius: 20,
+                        radius: 17,
                         backgroundColor: Colors.black,
                         //backgroundImage: AssetImage("assets/image/edit_icon.png"),
                         child: Container(
                           height: 20,
                           width: 20,
-
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(image: AssetImage("assets/image/edit_icon.png"))
+                          ),
                         ),
                       ),
                       // Container(
@@ -76,10 +78,10 @@ class _ProfilePage2State extends State<ProfilePage2> {
                       // )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Profile",
                     style: TextStyle(
                         fontSize: 22, fontWeight: FontWeight.bold),

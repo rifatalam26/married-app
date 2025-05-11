@@ -52,17 +52,21 @@ class _ProfilePage2State extends State<ProfilePage2> {
                         backgroundImage:
                         AssetImage("assets/image/Ellipse 107.png"),
                       ),
-                      Container(
-                       height: 35,
-                        width: 35,
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(100),
-                          image: const DecorationImage(
-                              //fit: BoxFit.cover,
-                              image: AssetImage("assets/image/Vector.png"))
-                        ),
+                      CircleAvatar(
+                        radius: 20,
                       )
+                      // Container(
+                      //  height: 35,
+                      //   width: 35,
+                      //   decoration: BoxDecoration(
+                      //     color: Colors.black,
+                      //     borderRadius: BorderRadius.circular(100),
+                      //     image: const DecorationImage(
+                      //         //fit: BoxFit.cover,
+                      //         image: AssetImage("assets/image/Vector.png"))
+                      //   ),
+                      //   //child: Icon(Icons.edit_underline),
+                      // )
                     ],
                   ),
                   const SizedBox(
@@ -80,6 +84,7 @@ class _ProfilePage2State extends State<ProfilePage2> {
           const SizedBox(
             height: 50,
           ),
+          Text("Name")
         ],
       ),
     );

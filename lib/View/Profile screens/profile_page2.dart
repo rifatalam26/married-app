@@ -39,14 +39,14 @@ class _ProfilePage2State extends State<ProfilePage2> {
           const SizedBox(
             height: 30,
           ),
-           Row(
+            Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(
                 children: [
                   Stack(
                     children: [
-                      const CircleAvatar(
+                      CircleAvatar(
                         radius: 60,
                         //backgroundColor: Colors.blue,
                         backgroundImage:
@@ -54,7 +54,14 @@ class _ProfilePage2State extends State<ProfilePage2> {
                       ),
                       CircleAvatar(
                         radius: 20,
-                      )
+                        backgroundColor: Colors.black,
+                        //backgroundImage: AssetImage("assets/image/edit_icon.png"),
+                        child: Container(
+                          height: 20,
+                          width: 20,
+
+                        ),
+                      ),
                       // Container(
                       //  height: 35,
                       //   width: 35,
@@ -63,16 +70,16 @@ class _ProfilePage2State extends State<ProfilePage2> {
                       //     borderRadius: BorderRadius.circular(100),
                       //     image: const DecorationImage(
                       //         //fit: BoxFit.cover,
-                      //         image: AssetImage("assets/image/Vector.png"))
+                      //         image: AssetImage("assets/image/edit_icon.png"))
                       //   ),
                       //   //child: Icon(Icons.edit_underline),
                       // )
                     ],
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 20,
                   ),
-                  const Text(
+                  Text(
                     "Profile",
                     style: TextStyle(
                         fontSize: 22, fontWeight: FontWeight.bold),

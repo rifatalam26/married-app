@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:married_app/View/Profile%20screens/profile_page1.dart';
 
 class ProfilePage2 extends StatefulWidget {
   const ProfilePage2({super.key});
@@ -11,7 +13,7 @@ class _ProfilePage2State extends State<ProfilePage2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:Column(
+      body: Column(
         children: [
           const SizedBox(
             height: 50,
@@ -19,7 +21,9 @@ class _ProfilePage2State extends State<ProfilePage2> {
           Row(
             children: [
               IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(const ProfilePage1());
+                  },
                   icon: const Icon(
                     Icons.arrow_back,
                     size: 30,
@@ -39,43 +43,37 @@ class _ProfilePage2State extends State<ProfilePage2> {
           const SizedBox(
             height: 30,
           ),
-            Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(
                 children: [
                   Stack(
+                    clipBehavior: Clip.none,
                     children: [
                       const CircleAvatar(
                         radius: 60,
                         //backgroundColor: Colors.blue,
                         backgroundImage:
-                        AssetImage("assets/image/Ellipse 107.png"),
+                            AssetImage("assets/image/Ellipse 107.png"),
                       ),
-                      CircleAvatar(
-                        radius: 17,
-                        backgroundColor: Colors.black,
-                        //backgroundImage: AssetImage("assets/image/edit_icon.png"),
-                        child: Container(
-                          height: 20,
-                          width: 20,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(image: AssetImage("assets/image/edit_icon.png"))
+                      Positioned(
+                        top: 70,
+                        left: 95,
+                        child: CircleAvatar(
+                          radius: 17,
+                          backgroundColor: Colors.black,
+                          //backgroundImage: AssetImage("assets/image/edit_icon.png"),
+                          child: Container(
+                            height: 20,
+                            width: 20,
+                            decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                        "assets/image/edit_icon.png"))),
                           ),
                         ),
                       ),
-                      // Container(
-                      //  height: 35,
-                      //   width: 35,
-                      //   decoration: BoxDecoration(
-                      //     color: Colors.black,
-                      //     borderRadius: BorderRadius.circular(100),
-                      //     image: const DecorationImage(
-                      //         //fit: BoxFit.cover,
-                      //         image: AssetImage("assets/image/edit_icon.png"))
-                      //   ),
-                      //   //child: Icon(Icons.edit_underline),
-                      // )
                     ],
                   ),
                   const SizedBox(
@@ -83,8 +81,7 @@ class _ProfilePage2State extends State<ProfilePage2> {
                   ),
                   const Text(
                     "Profile",
-                    style: TextStyle(
-                        fontSize: 22, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   )
                 ],
               ),
@@ -93,7 +90,95 @@ class _ProfilePage2State extends State<ProfilePage2> {
           const SizedBox(
             height: 50,
           ),
-          Text("Name")
+          const Row(
+            children: [
+              SizedBox(
+                width: 15,
+              ),
+              Text(
+                "Name",
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 15,right: 15),
+            child: TextFormField(
+              decoration: InputDecoration(
+               // suffixIcon: ,
+                  hintText: "Emma Johnson",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    // borderSide: BorderSide(color: )
+                  ),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8))),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 15,
+              ),
+              Text(
+                "Email",
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 15,right: 15),
+            child: TextFormField(
+              decoration: InputDecoration(
+                // suffixIcon: ,
+                  hintText: "Emma Johnson",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    // borderSide: BorderSide(color: )
+                  ),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8))),
+            ),
+          ),
+          const SizedBox(
+            height: 180,
+          ),
+          InkWell(
+            onTap: (){
+             // Get.to(const PhoneNumberScreen());
+            },
+            child: Container(
+              height: 53,
+              width: 331,
+              decoration: BoxDecoration(
+                  color: const Color(0xff7DBABB),
+                  borderRadius: BorderRadius.circular(8)),
+              child: const Center(
+                child: Text(
+                  "Save",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

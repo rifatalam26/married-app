@@ -106,8 +106,10 @@ class _SettingState extends State<Setting> {
                 const SizedBox(
                   width: 135,
                 ),
-                Switch(activeColor: const Color(0xff7DBABB),
-                    focusColor: const Color(0xff7DBABB),
+                Switch(activeColor: Colors.white,
+                   // focusColor: const Color(0xff7DBABB),
+                    activeTrackColor: const Color(0xff7DBABB),
+                    hoverColor: const Color(0xff7DBABB),
                     value: isSwitched,
                     onChanged: (value){
                       setState(() {

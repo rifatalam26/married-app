@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:married_app/View/Profile%20screens/profile_page1.dart';
 
-class Setting extends StatefulWidget {
-  const Setting({super.key});
+class SettingsScreen extends StatefulWidget {
+  const SettingsScreen({super.key});
 
   @override
-  State<Setting> createState() => _SettingState();
+  State<SettingsScreen> createState() => _SettingState();
 }
 
-class _SettingState extends State<Setting> {
+class _SettingState extends State<SettingsScreen> {
   bool isSwitched = false;
   @override
   Widget build(BuildContext context) {

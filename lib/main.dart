@@ -10,7 +10,7 @@ import 'View/Home screens/wedding_ceremony_music_page_3.dart';
 import 'View/Home screens/wedding_ceremony_music_page_4.dart';
 import 'View/Home screens/wedding_reception_music1.dart';
 import 'View/Profile screens/profile_page1.dart';
-import 'View/Profile screens/setting.dart';
+import 'View/Profile screens/settings_screen.dart';
 
 
 void main() {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Setting(),
+      home: SettingsScreen(),
     );
   }
 }

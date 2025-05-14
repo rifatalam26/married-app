@@ -10,6 +10,7 @@ class Setting extends StatefulWidget {
 }
 
 class _SettingState extends State<Setting> {
+  bool isSwitched = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,16 +94,27 @@ class _SettingState extends State<Setting> {
                     bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
                     left: BorderSide(color: Color(0xffE0E0E0), width: 2),
                     right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
-            child: const Row(
+            child: Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Notification",
                   style: TextStyle(fontSize: 20, color: Color(0xff171717)),
                 ),
-
+                const SizedBox(
+                  width: 135,
+                ),
+                Switch(activeColor: const Color(0xff7DBABB),
+                    focusColor: const Color(0xff7DBABB),
+                    value: isSwitched,
+                    onChanged: (value){
+                      setState(() {
+                        isSwitched=value;
+                      });
+                    }
+                )
               ],
             ),
           ),

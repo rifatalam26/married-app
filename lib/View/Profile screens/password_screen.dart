@@ -17,7 +17,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
       body: Column(
         children: [
           const SizedBox(
-            height: 50,
+            height: 70,
           ),
           Row(
             children: [
@@ -43,6 +43,32 @@ class _PasswordScreenState extends State<PasswordScreen> {
           ),
           const SizedBox(
             height: 40,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Current Password",
+                style: TextStyle(fontSize: 16),
+              ),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 15,right: 15),
+            child: TextFormField(
+              decoration: InputDecoration(
+                // suffixIcon: ,
+                  hintText: "Emma Johnson",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                 // focusedBorder: OutlineInputBorder(
+//borderRadius: BorderRadius.circular(8),
+                    // borderSide: BorderSide(color: )
+                  ),
+                  //border: OutlineInputBorder(
+                     // borderRadius: BorderRadius.circular(8))),
+            ),
           ),
         ],
       ),

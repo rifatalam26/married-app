@@ -10,6 +10,7 @@ class PasswordScreen extends StatefulWidget {
 }
 
 class _PasswordScreenState extends State<PasswordScreen> {
+  bool securetext=true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,8 +61,21 @@ class _PasswordScreenState extends State<PasswordScreen> {
           Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: TextFormField(
+              obscureText: securetext,
               decoration: InputDecoration(
                 fillColor: Colors.white,
+                  suffixIcon: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          securetext =! securetext;
+                        });
+                      },
+                      icon: Icon(
+                        securetext
+                            ? Icons.visibility_off
+                            : Icons.visibility,
+                        color: const Color(0xffA7A7A7),
+                      )),
                 filled: true,
                 border: InputBorder.none,
                 hintText: "Current Password",

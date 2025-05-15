@@ -59,6 +59,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
             padding: const EdgeInsets.only(left: 15,right: 15),
             child: TextFormField(
               decoration: InputDecoration(
+                border: InputBorder.none,
                 // suffixIcon: ,
                   hintText: "Emma Johnson",
                   hintStyle: TextStyle(color: Colors.grey.shade400),

@@ -14,56 +14,99 @@ class _PasswordScreenState extends State<PasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 70,
-          ),
-          Row(
-            children: [
-              IconButton(
-                  onPressed: () {
-                    Get.to(const SettingsScreen());
-                  },
-                  icon: const Icon(
-                    Icons.arrow_back,
-                    size: 30,
-                  )),
-              const SizedBox(
-                width: 8,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 70,
+            ),
+            Row(
+              children: [
+                IconButton(
+                    onPressed: () {
+                      Get.to(const SettingsScreen());
+                    },
+                    icon: const Icon(
+                      Icons.arrow_back,
+                      size: 30,
+                    )),
+                const SizedBox(
+                  width: 8,
+                ),
+                const Text(
+                  "Password",
+                  style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff141414)),
+                )
+              ],
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "Current Password",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: TextFormField(
+                obscureText: securetext,
+                decoration: InputDecoration(
+                  fillColor: Colors.white,
+                    suffixIcon: IconButton(
+                        onPressed: () {
+                          setState(() {
+                            securetext =! securetext;
+                          });
+                        },
+                        icon: Icon(
+                          securetext
+                              ? Icons.visibility_off
+                              : Icons.visibility,
+                          color: const Color(0xffA7A7A7),
+                        )),
+                  filled: true,
+                  border: InputBorder.none,
+                  hintText: "Current Password",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                ),
               ),
-              const Text(
-                "Password",
-                style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xff141414)),
-              )
-            ],
-          ),
-          const SizedBox(
-            height: 40,
-          ),
-          const Row(
-            children: [
-              SizedBox(
-                width: 20,
-              ),
-              Text(
-                "Current Password",
-                style: TextStyle(fontSize: 16),
-              ),
-            ],
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            child: TextFormField(
-              obscureText: securetext,
-              decoration: InputDecoration(
-                fillColor: Colors.white,
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "New Password",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: TextFormField(
+                obscureText: securetext,
+                decoration: InputDecoration(
+                  fillColor: Colors.white,
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
@@ -76,14 +119,81 @@ class _PasswordScreenState extends State<PasswordScreen> {
                             : Icons.visibility,
                         color: const Color(0xffA7A7A7),
                       )),
-                filled: true,
-                border: InputBorder.none,
-                hintText: "Current Password",
-                hintStyle: TextStyle(color: Colors.grey.shade400),
+                  filled: true,
+                  border: InputBorder.none,
+                  hintText: "Enter Your New Password",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                ),
               ),
             ),
-          ),
-        ],
+            const SizedBox(
+              height: 15,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "Confirm Password",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: TextFormField(
+                obscureText: securetext,
+                decoration: InputDecoration(
+                  fillColor: Colors.white,
+                  suffixIcon: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          securetext =! securetext;
+                        });
+                      },
+                      icon: Icon(
+                        securetext
+                            ? Icons.visibility_off
+                            : Icons.visibility,
+                        color: const Color(0xffA7A7A7),
+                      )),
+                  filled: true,
+                  border: InputBorder.none,
+                  hintText: "Re-enter your new password",
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 180,
+            ),
+            InkWell(
+              onTap: (){
+                // Get.to(const PhoneNumberScreen());
+              },
+              child: Container(
+                height: 53,
+                width: 331,
+                decoration: BoxDecoration(
+                    color: const Color(0xff7DBABB),
+                    borderRadius: BorderRadius.circular(8)),
+                child: const Center(
+                  child: Text(
+                    "Save",
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

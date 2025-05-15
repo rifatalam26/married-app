@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:married_app/View/Profile%20screens/settings_screen.dart';
 
 class PasswordScreen extends StatefulWidget {
@@ -55,20 +54,19 @@ class _PasswordScreenState extends State<PasswordScreen> {
               ),
             ],
           ),
+          const SizedBox(
+            height: 10,
+          ),
           Padding(
-            padding: const EdgeInsets.only(left: 15,right: 15),
+            padding: const EdgeInsets.only(left: 15, right: 15),
             child: TextFormField(
               decoration: InputDecoration(
+                fillColor: Colors.white,
+                filled: true,
                 border: InputBorder.none,
-                // suffixIcon: ,
-                  hintText: "Emma Johnson",
-                  hintStyle: TextStyle(color: Colors.grey.shade400),
-                 // focusedBorder: OutlineInputBorder(
-//borderRadius: BorderRadius.circular(8),
-                    // borderSide: BorderSide(color: )
-                  ),
-                  //border: OutlineInputBorder(
-                     // borderRadius: BorderRadius.circular(8))),
+                hintText: "Current Password",
+                hintStyle: TextStyle(color: Colors.grey.shade400),
+              ),
             ),
           ),
         ],

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:married_app/View/Home%20screens/home_screen.dart';
+import 'package:married_app/View/Home%20screens/wedding_ceremony_music_page2.dart';
 
 class WeddingCeremonyMusicPage1 extends StatefulWidget {
   const WeddingCeremonyMusicPage1({super.key});
@@ -24,7 +27,9 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               Row(
                 children: [
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(const HomeScreen());
+                      },
                       icon: const Icon(
                         Icons.arrow_back,
                         size: 30,
@@ -283,13 +288,7 @@ class _WeddingCeremonyMusicPage1State extends State<WeddingCeremonyMusicPage1> {
               ),
               InkWell(
                 onTap: () {
-                  showDialog(
-                      context: context,
-                      builder: (context){
-                        return const AlertDialog(
-                          title: Text("Paste your music link below and"),
-                        );
-                      });
+                  Get.to(const WeddingCeremonyMusicPage2());
                 },
                 child: Container(
                   height: 53,

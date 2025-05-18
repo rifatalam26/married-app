@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:married_app/View/Home%20screens/wedding_ceremony_music_page1.dart';
 
 class WeddingCeremonyMusicPage2 extends StatefulWidget {
   const WeddingCeremonyMusicPage2({super.key});
@@ -18,10 +20,15 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const SizedBox(
+                height: 50,
+              ),
               Row(
                 children: [
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(const WeddingCeremonyMusicPage1());
+                      },
                       icon: const Icon(
                         Icons.arrow_back,
                         size: 30,
@@ -298,25 +305,30 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                               const SizedBox(
                                 height: 10,
                               ),
-                              Container(
-                                height: 53,
-                                width: 331,
-                                decoration: const BoxDecoration(
-                                    border: Border(
-                                      top: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                                      bottom: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                                      left: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                                      right: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                                    ),
-                                    borderRadius: BorderRadius.all(Radius.circular(8))),
-                                child: const Center(
-                                    child: Text(
-                                      "Cancel",
-                                      style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          color: Color(0xff7DBABB)),
-                                    )),
+                              InkWell(
+                                onTap: (){
+                                  Get.to(const WeddingCeremonyMusicPage2());
+                                },
+                                child: Container(
+                                  height: 53,
+                                  width: 331,
+                                  decoration: const BoxDecoration(
+                                      border: Border(
+                                        top: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                                        bottom: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                                        left: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                                        right: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                                      ),
+                                      borderRadius: BorderRadius.all(Radius.circular(8))),
+                                  child: const Center(
+                                      child: Text(
+                                        "Cancel",
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Color(0xff7DBABB)),
+                                      )),
+                                ),
                               ),
                               const SizedBox(
                                 height: 20,
@@ -346,25 +358,139 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
               const SizedBox(
                 height: 10,
               ),
-              Container(
-                height: 53,
-                width: 331,
-                decoration: const BoxDecoration(
-                    border: Border(
-                      top: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                      bottom: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                      left: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                      right: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                    ),
-                    borderRadius: BorderRadius.all(Radius.circular(8))),
-                child: const Center(
-                    child: Text(
-                  "Export As a PDF",
-                  style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xff7DBABB)),
-                )),
+              InkWell(
+                onTap: (){
+                  showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          title: Center(
+                            child: Column(
+                              children: [
+                                const Text(
+                                  " Download Your Wedding ",
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                const Text(
+                                  "Ceremony Music Selections! 💍",
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                const SizedBox(
+                                  height: 15,
+                                ),
+                                const Text(
+                                  " Your special day deserves the perfect",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                const Text(
+                                  " soundtrack! 🎶",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 15,
+                                ),
+                                const Text(
+                                  " You've carefully selected the music for your wedding ",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                const Text(
+                                  "ceremony. Now, download a professional PDF summary",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                const Text(
+                                  "to share with your celebrant, DJ, or venue coordinator.",
+                                  style: TextStyle(
+                                      fontSize: 12, color: Color(0xff8D8D8D)),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Container(
+                                  height: 53,
+                                  width: 331,
+                                  decoration: BoxDecoration(
+                                      color: const Color(0xff7DBABB),
+                                      borderRadius: BorderRadius.circular(8)),
+                                  child: const Center(
+                                    child: Text(
+                                      "Download PDF",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white),
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                  height: 53,
+                                  width: 331,
+                                  decoration: const BoxDecoration(
+                                      border: Border(
+                                        top: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        bottom: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        left: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        right: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                      ),
+                                      borderRadius:
+                                      BorderRadius.all(Radius.circular(8))),
+                                  child: const Center(
+                                      child: Text(
+                                        "Cancel",
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Color(0xff7DBABB)),
+                                      )),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                              ],
+                            ),
+                          ),
+                        );
+                      });
+                },
+                child: Container(
+                  height: 53,
+                  width: 331,
+                  decoration: const BoxDecoration(
+                      border: Border(
+                        top: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                        bottom: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                        left: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                        right: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                      ),
+                      borderRadius: BorderRadius.all(Radius.circular(8))),
+                  child: const Center(
+                      child: Text(
+                    "Export As a PDF",
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff7DBABB)),
+                  )),
+                ),
               ),
               const SizedBox(
                 height: 20,

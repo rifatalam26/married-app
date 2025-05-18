@@ -11,6 +11,8 @@ class PasswordScreen extends StatefulWidget {
 
 class _PasswordScreenState extends State<PasswordScreen> {
   bool securetext=true;
+  bool securetext1=true;
+  bool securetext2=true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,17 +106,17 @@ class _PasswordScreenState extends State<PasswordScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: TextFormField(
-                obscureText: securetext,
+                obscureText: securetext1,
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
-                          securetext =! securetext;
+                          securetext1 =! securetext1;
                         });
                       },
                       icon: Icon(
-                        securetext
+                        securetext1
                             ? Icons.visibility_off
                             : Icons.visibility,
                         color: const Color(0xffA7A7A7),
@@ -146,17 +148,17 @@ class _PasswordScreenState extends State<PasswordScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: TextFormField(
-                obscureText: securetext,
+                obscureText: securetext2,
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
-                          securetext =! securetext;
+                          securetext2 =! securetext2;
                         });
                       },
                       icon: Icon(
-                        securetext
+                        securetext2
                             ? Icons.visibility_off
                             : Icons.visibility,
                         color: const Color(0xffA7A7A7),

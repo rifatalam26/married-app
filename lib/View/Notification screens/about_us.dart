@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:married_app/View/Profile%20screens/profile_page1.dart';
 
 class AboutUs extends StatefulWidget {
   const AboutUs({super.key});
@@ -19,7 +21,9 @@ class _AboutUsState extends State<AboutUs> {
         Row(
           children: [
             IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(const ProfilePage1());
+                },
                 icon: const Icon(
                   Icons.arrow_back,
                   size: 30,

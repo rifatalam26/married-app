@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:married_app/View/Profile%20screens/profile_page1.dart';
 
 class PrivacyPolicy extends StatefulWidget {
   const PrivacyPolicy({super.key});
@@ -19,7 +21,9 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
           Row(
             children: [
               IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(const ProfilePage1());
+                  },
                   icon: const Icon(
                     Icons.arrow_back,
                     size: 30,

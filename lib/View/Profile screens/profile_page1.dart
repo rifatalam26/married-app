@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:married_app/View/Notification%20screens/about_us.dart';
+import 'package:married_app/View/Notification%20screens/privacy_policy.dart';
+import 'package:married_app/View/Notification%20screens/terms_and_condition_screen.dart';
 import 'package:married_app/View/Profile%20screens/profile_page2.dart';
 import 'package:married_app/View/Profile%20screens/settings_screen.dart';
 
@@ -256,105 +259,120 @@ class _ProfilePage1State extends State<ProfilePage1> {
               const SizedBox(
                 height: 15,
               ),
-              Container(
-                height: 65,
-                width: 330,
-                decoration: BoxDecoration(
-                    // color: Colors.blue,
-                    borderRadius: BorderRadius.circular(13),
-                    border: const Border(
-                        top: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        left: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
-                child:  Row(
-                  children: [
-                    const SizedBox(
-                      width: 18,
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      decoration: const BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage("assets/image/terms of condition.png"))),
-                    ),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    const Text(
-                      "Terms of Conditions",
-                      style: TextStyle(fontSize: 20, color: Color(0xff171717)),
-                    )
-                  ],
+              InkWell(
+                onTap: (){
+                  Get.to(const TermsAndConditionScreen());
+                },
+                child: Container(
+                  height: 65,
+                  width: 330,
+                  decoration: BoxDecoration(
+                      // color: Colors.blue,
+                      borderRadius: BorderRadius.circular(13),
+                      border: const Border(
+                          top: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          left: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
+                  child:  Row(
+                    children: [
+                      const SizedBox(
+                        width: 18,
+                      ),
+                      Container(
+                        height: 25,
+                        width: 25,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage("assets/image/terms of condition.png"))),
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      const Text(
+                        "Terms of Conditions",
+                        style: TextStyle(fontSize: 20, color: Color(0xff171717)),
+                      )
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(
                 height: 15,
               ),
-              Container(
-                height: 65,
-                width: 330,
-                decoration: BoxDecoration(
-                    // color: Colors.blue,
-                    borderRadius: BorderRadius.circular(13),
-                    border: const Border(
-                        top: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        left: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
-                child: const Row(
-                  children: [
-                    SizedBox(
-                      width: 15,
-                    ),
-                    Icon(
-                      Icons.error_outline,
-                      color: Color(0xff9B9B9B),
-                      size: 32,
-                    ),
-                    SizedBox(
-                      width: 13,
-                    ),
-                    Text(
-                      "About Us",
-                      style: TextStyle(fontSize: 20, color: Color(0xff171717)),
-                    )
-                  ],
+              InkWell(
+                onTap: (){
+                  Get.to(const AboutUs());
+                },
+                child: Container(
+                  height: 65,
+                  width: 330,
+                  decoration: BoxDecoration(
+                      // color: Colors.blue,
+                      borderRadius: BorderRadius.circular(13),
+                      border: const Border(
+                          top: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          left: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
+                  child: const Row(
+                    children: [
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Icon(
+                        Icons.error_outline,
+                        color: Color(0xff9B9B9B),
+                        size: 32,
+                      ),
+                      SizedBox(
+                        width: 13,
+                      ),
+                      Text(
+                        "About Us",
+                        style: TextStyle(fontSize: 20, color: Color(0xff171717)),
+                      )
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(
                 height: 15,
               ),
-              Container(
-                height: 65,
-                width: 330,
-                decoration: BoxDecoration(
-                    // color: Colors.blue,
-                    borderRadius: BorderRadius.circular(13),
-                    border: const Border(
-                        top: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        left: BorderSide(color: Color(0xffE0E0E0), width: 2),
-                        right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
-                child: const Row(
-                  children: [
-                    SizedBox(
-                      width: 15,
-                    ),
-                    Icon(
-                      Icons.verified_user ,
-                      color: Color(0xff9B9B9B),
-                      size: 32,
-                    ),
-                    SizedBox(
-                      width: 13,
-                    ),
-                    Text(
-                      "Privacy Policy",
-                      style: TextStyle(fontSize: 20, color: Color(0xff171717)),
-                    )
-                  ],
+              InkWell(
+                onTap: (){
+                  Get.to(const PrivacyPolicy());
+                },
+                child: Container(
+                  height: 65,
+                  width: 330,
+                  decoration: BoxDecoration(
+                      // color: Colors.blue,
+                      borderRadius: BorderRadius.circular(13),
+                      border: const Border(
+                          top: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          bottom: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          left: BorderSide(color: Color(0xffE0E0E0), width: 2),
+                          right: BorderSide(color: Color(0xffE0E0E0), width: 2))),
+                  child: const Row(
+                    children: [
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Icon(
+                        Icons.verified_user ,
+                        color: Color(0xff9B9B9B),
+                        size: 32,
+                      ),
+                      SizedBox(
+                        width: 13,
+                      ),
+                      Text(
+                        "Privacy Policy",
+                        style: TextStyle(fontSize: 20, color: Color(0xff171717)),
+                      )
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(

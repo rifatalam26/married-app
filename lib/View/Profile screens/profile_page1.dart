@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:married_app/View/Profile%20screens/profile_page2.dart';
+import 'package:married_app/View/Profile%20screens/settings_screen.dart';
 
 class ProfilePage1 extends StatefulWidget {
   const ProfilePage1({super.key});
@@ -217,7 +218,9 @@ class _ProfilePage1State extends State<ProfilePage1> {
                 height: 15,
               ),
               InkWell(
-                onTap: (){},
+                onTap: (){
+                  Get.to(const SettingsScreen());
+                },
                 child: Container(
                   height: 65,
                   width: 330,

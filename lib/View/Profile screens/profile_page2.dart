@@ -160,7 +160,7 @@ class _ProfilePage2State extends State<ProfilePage2> {
           ),
           InkWell(
             onTap: (){
-             // Get.to(const PhoneNumberScreen());
+              Get.to(const ProfilePage1());
             },
             child: Container(
               height: 53,

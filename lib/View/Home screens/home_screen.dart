@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:married_app/View/Home%20screens/wedding_ceremony_music_page1.dart';
+import 'package:married_app/View/Profile%20screens/profile_page1.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,11 +22,16 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Row(
               children: [
-                const CircleAvatar(
-                    radius: 30,
-                    // backgroundColor: Colors.blue,
-                    backgroundImage: NetworkImage(
-                        "https://www.google.com/imgres?q=profile%20picture%20&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2019%2F08%2F11%2F18%2F59%2Ficon-4399701_640.png&imgrefurl=https%3A%2F%2Fpixabay.com%2Fillustrations%2Fsearch%2Fprofile%2520picture%2F&docid=r2ZSI0smc5_E_M&tbnid=5tEk3WayougHVM&vet=12ahUKEwihtbHewfOMAxXLSGwGHeVBPTsQM3oFCIUBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwihtbHewfOMAxXLSGwGHeVBPTsQM3oFCIUBEAA")),
+                InkWell(
+                  onTap: (){
+                    Get.to(const ProfilePage1());
+                  },
+                  child: const CircleAvatar(
+                      radius: 30,
+                      // backgroundColor: Colors.blue,
+                      backgroundImage: NetworkImage(
+                          "https://www.google.com/imgres?q=profile%20picture%20&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2019%2F08%2F11%2F18%2F59%2Ficon-4399701_640.png&imgrefurl=https%3A%2F%2Fpixabay.com%2Fillustrations%2Fsearch%2Fprofile%2520picture%2F&docid=r2ZSI0smc5_E_M&tbnid=5tEk3WayougHVM&vet=12ahUKEwihtbHewfOMAxXLSGwGHeVBPTsQM3oFCIUBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwihtbHewfOMAxXLSGwGHeVBPTsQM3oFCIUBEAA")),
+                ),
                 const SizedBox(
                   width: 15,
                 ),

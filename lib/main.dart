@@ -7,6 +7,7 @@ import 'package:married_app/View/Splash%20screens/splash_screen.dart';
 import 'package:married_app/View/wedding_ceremony_music_page5.dart';
 import 'package:married_app/View/wedding_ceremony_music_page6.dart';
 
+import 'View/Home screens/home_screen.dart';
 import 'View/Home screens/wedding_ceremony_music_list.dart';
 import 'View/Home screens/wedding_ceremony_music_page2.dart';
 import 'View/Home screens/wedding_ceremony_music_page_3.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfilePage1(),
+      home: HomeScreen(),
     );
   }
 }

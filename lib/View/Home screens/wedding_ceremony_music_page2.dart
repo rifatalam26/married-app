@@ -306,7 +306,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                                 height: 10,
                               ),
                               InkWell(
-                                onTap: (){
+                                onTap: () {
                                   Get.to(const WeddingCeremonyMusicPage2());
                                 },
                                 child: Container(
@@ -314,20 +314,25 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                                   width: 331,
                                   decoration: const BoxDecoration(
                                       border: Border(
-                                        top: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                                        bottom: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                                        left: BorderSide(width: 1, color: Color(0xff7DBABB)),
-                                        right: BorderSide(width: 1, color: Color(0xff7DBABB)),
+                                        top: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        bottom: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        left: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
+                                        right: BorderSide(
+                                            width: 1, color: Color(0xff7DBABB)),
                                       ),
-                                      borderRadius: BorderRadius.all(Radius.circular(8))),
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(8))),
                                   child: const Center(
                                       child: Text(
-                                        "Cancel",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold,
-                                            color: Color(0xff7DBABB)),
-                                      )),
+                                    "Cancel",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xff7DBABB)),
+                                  )),
                                 ),
                               ),
                               const SizedBox(
@@ -359,7 +364,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                 height: 10,
               ),
               InkWell(
-                onTap: (){
+                onTap: () {
                   showDialog(
                       context: context,
                       builder: (context) {
@@ -452,15 +457,15 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                                             width: 1, color: Color(0xff7DBABB)),
                                       ),
                                       borderRadius:
-                                      BorderRadius.all(Radius.circular(8))),
+                                          BorderRadius.all(Radius.circular(8))),
                                   child: const Center(
                                       child: Text(
-                                        "Cancel",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold,
-                                            color: Color(0xff7DBABB)),
-                                      )),
+                                    "Cancel",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xff7DBABB)),
+                                  )),
                                 ),
                                 const SizedBox(
                                   height: 20,

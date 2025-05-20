@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:married_app/View/Home%20screens/wedding_ceremony_music_page1.dart';
+import 'package:married_app/View/Home%20screens/wedding_ceremony_music_page_4.dart';
 
 class WeddingCeremonyMusicPage2 extends StatefulWidget {
   const WeddingCeremonyMusicPage2({super.key});
@@ -52,17 +53,22 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Container(
-                    height: 40,
-                    width: 100,
-                    decoration: BoxDecoration(
-                        color: const Color(0xff7DBABB),
-                        borderRadius: BorderRadius.circular(8)),
-                    child: const Center(
-                      child: Text(
-                        "Add List",
-                        style:
-                            TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
+                  InkWell(
+                    onTap: (){
+                      Get.to(const WeddingCeremonyMusicPage4());
+                    },
+                    child: Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(
+                          color: const Color(0xff7DBABB),
+                          borderRadius: BorderRadius.circular(8)),
+                      child: const Center(
+                        child: Text(
+                          "Add List",
+                          style:
+                              TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
+                        ),
                       ),
                     ),
                   )

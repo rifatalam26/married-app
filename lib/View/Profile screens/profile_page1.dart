@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:married_app/View/Home%20screens/home_screen.dart';
 import 'package:married_app/View/Notification%20screens/about_us.dart';
 import 'package:married_app/View/Notification%20screens/privacy_policy.dart';
 import 'package:married_app/View/Notification%20screens/terms_and_condition_screen.dart';
@@ -99,7 +100,9 @@ class _ProfilePage1State extends State<ProfilePage1> {
               Row(
                 children: [
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(const HomeScreen());
+                      },
                       icon: const Icon(
                         Icons.arrow_back,
                         size: 30,

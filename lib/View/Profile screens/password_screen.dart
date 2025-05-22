@@ -67,6 +67,9 @@ class _PasswordScreenState extends State<PasswordScreen> {
               child: TextFormField(
                 obscureText: securetext,
                 decoration: InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15)
+                  ),
                   fillColor: Colors.white,
                     suffixIcon: IconButton(
                         onPressed: () {

@@ -11,9 +11,9 @@ class PasswordScreen extends StatefulWidget {
 }
 
 class _PasswordScreenState extends State<PasswordScreen> {
-  bool securetext=true;
-  bool securetext1=true;
-  bool securetext2=true;
+  bool securetext = true;
+  bool securetext1 = true;
+  bool securetext2 = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,21 +68,26 @@ class _PasswordScreenState extends State<PasswordScreen> {
                 obscureText: securetext,
                 decoration: InputDecoration(
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15)
-                  ),
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide:
+                          const BorderSide(color: Color(0xffE7F0FD),
+                              width: 2)),
+                  enabledBorder:OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide:
+                      const BorderSide(color: Color(0xffE7F0FD),
+                          width: 2)) ,
                   fillColor: Colors.white,
-                    suffixIcon: IconButton(
-                        onPressed: () {
-                          setState(() {
-                            securetext =! securetext;
-                          });
-                        },
-                        icon: Icon(
-                          securetext
-                              ? Icons.visibility_off
-                              : Icons.visibility,
-                          color: const Color(0xffA7A7A7),
-                        )),
+                  suffixIcon: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          securetext = !securetext;
+                        });
+                      },
+                      icon: Icon(
+                        securetext ? Icons.visibility_off : Icons.visibility,
+                        color: const Color(0xffA7A7A7),
+                      )),
                   filled: true,
                   border: InputBorder.none,
                   hintText: "Current Password",
@@ -112,17 +117,25 @@ class _PasswordScreenState extends State<PasswordScreen> {
               child: TextFormField(
                 obscureText: securetext1,
                 decoration: InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide:
+                      const BorderSide(color: Color(0xffE7F0FD),
+                          width: 2)),
+                  enabledBorder:OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide:
+                      const BorderSide(color: Color(0xffE7F0FD),
+                          width: 2)) ,
                   fillColor: Colors.white,
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
-                          securetext1 =! securetext1;
+                          securetext1 = !securetext1;
                         });
                       },
                       icon: Icon(
-                        securetext1
-                            ? Icons.visibility_off
-                            : Icons.visibility,
+                        securetext1 ? Icons.visibility_off : Icons.visibility,
                         color: const Color(0xffA7A7A7),
                       )),
                   filled: true,
@@ -154,17 +167,25 @@ class _PasswordScreenState extends State<PasswordScreen> {
               child: TextFormField(
                 obscureText: securetext2,
                 decoration: InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide:
+                      const BorderSide(color: Color(0xffE7F0FD),
+                          width: 2)),
+                  enabledBorder:OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide:
+                      const BorderSide(color: Color(0xffE7F0FD),
+                          width: 2)) ,
                   fillColor: Colors.white,
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
-                          securetext2 =! securetext2;
+                          securetext2 = !securetext2;
                         });
                       },
                       icon: Icon(
-                        securetext2
-                            ? Icons.visibility_off
-                            : Icons.visibility,
+                        securetext2 ? Icons.visibility_off : Icons.visibility,
                         color: const Color(0xffA7A7A7),
                       )),
                   filled: true,
@@ -178,8 +199,8 @@ class _PasswordScreenState extends State<PasswordScreen> {
               height: 180,
             ),
             InkWell(
-              onTap: (){
-                 Get.to(const ProfilePage1());
+              onTap: () {
+                Get.to(const ProfilePage1());
               },
               child: Container(
                 height: 53,

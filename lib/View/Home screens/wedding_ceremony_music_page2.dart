@@ -55,7 +55,7 @@ class _WeddingCeremonyMusicPage2State extends State<WeddingCeremonyMusicPage2> {
                 children: [
                   InkWell(
                     onTap: (){
-                      Get.to(const WeddingCeremonyMusicPage4());
+                      Get.to( WeddingCeremonyMusicPage4());
                     },
                     child: Container(
                       height: 40,
